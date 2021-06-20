@@ -32,8 +32,6 @@
   * [TokenVesting](smart-contracts/governance/tokenvesting.md)
   * [StakingRewards](smart-contracts/governance/stakingrewards.md)
   * [RewardDistributor](smart-contracts/governance/rewarddistributor.md)
-* [Utils](smart-contracts/utils.md)
-* [Interfaces](smart-contracts/interfaces.md)
 
 ## Resources
 
