@@ -36,5 +36,3 @@ In addition to finding new products and services that they may never have discov
 
 To be Validators and Nominators on Zesty Market users will have to stake $ZEST. Users will receive fees from successful auctions and inflation obtained from the network to subsidize and reward validators for work done on the network.
 
-
-

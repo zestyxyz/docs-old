@@ -38,7 +38,7 @@ You will find the instructions on this page for integrating the ad slot into thr
 {% tab title="OBS" %}
 Add the Browser as a source in OBS, set the width to 550px and height to 200px, and use the below URL:
 
-https://www.zesty.games/obs?publisher={YOUR PUBLISHER ID}&tokenGroup={YOUR TOKEN GROUP}
+[https://www.zesty.games/obs?publisher={YOUR](https://www.zesty.games/obs?publisher={YOUR) PUBLISHER ID}&tokenGroup={YOUR TOKEN GROUP}
 {% endtab %}
 
 {% tab title="three.js" %}
@@ -48,14 +48,14 @@ https://www.zesty.games/obs?publisher={YOUR PUBLISHER ID}&tokenGroup={YOUR TOKEN
 
 **Step 2:** Add the ZestyAd object with your ad slot's parameters and add it to the scene:
 
-`let zestyAd = new ZestyAd(2, 3, "YOUR_AD_SLOT_TOKENGROUP", "YOUR_PUBLISHER_ID");  
+`let zestyAd = new ZestyAd(2, 3, "YOUR_AD_SLOT_TOKENGROUP", "YOUR_PUBLISHER_ID");    
 scene.add(zestyAd);`
 
-**Note:** The first and second parameters are used for the width and height of the ZestyAd. Make sure this corresponds to the size of the ad space on Zesty. 
+**Note:** The first and second parameters are used for the width and height of the ZestyAd. Make sure this corresponds to the size of the ad space on Zesty.
 {% endtab %}
 
 {% tab title="A-Frame" %}
-**Step 1:** In the head \(after the A-Frame import\), copy and paste: 
+**Step 1:** In the head \(after the A-Frame import\), copy and paste:
 
 `<script src="`[`https://lib.zesty.market/zesty-aframe-sdk.js`](https://lib.zesty.market/zesty-aframe-sdk.js)`"></script>`
 
@@ -77,17 +77,11 @@ Once you've selected your ad slot from the drop-down, select a date range you wo
 
 After you've selected the desired date range, click on "Mint". This step will require gas.
 
-
-
 ## The Auction
 
 Now that you've minted your own ad space, you're ready to put your ad slot up for auction!
 
-
-
 ## After The Auction
 
 After the ad slot has been purchased and there is sufficient proof that you had shown the ad for the agreed period of time, you'll be able to withdraw the amount used to purchase your Zesty NFT.
-
-
 
