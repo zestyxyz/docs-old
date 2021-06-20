@@ -21,6 +21,9 @@
 ## Smart Contracts
 
 * [Overview](smart-contracts/overview.md)
+* [Market](smart-contracts/market/README.md)
+  * [ZestyMarket\_ERC20\_V1\_1](smart-contracts/market/zestymarket_erc20_v1_1.md)
+  * [ZestyMarket\_ERC20\_V2](smart-contracts/market/zestymarket_erc20_v2.md)
 * [Governance](smart-contracts/governance/README.md)
   * [ZestyToken](smart-contracts/governance/zestytoken.md)
   * [GovernorAlpha](smart-contracts/governance/governoralpha.md)
@@ -28,9 +31,6 @@
   * [TokenVesting](smart-contracts/governance/tokenvesting.md)
   * [StakingRewards](smart-contracts/governance/stakingrewards.md)
   * [RewardDistributor](smart-contracts/governance/rewarddistributor.md)
-* [Market](smart-contracts/market/README.md)
-  * [ZestyMarket\_ERC20\_V1\_1](smart-contracts/market/zestymarket_erc20_v1_1.md)
-  * [ZestyMarket\_ERC20\_V2](smart-contracts/market/zestymarket_erc20_v2.md)
 * [Utils](smart-contracts/utils.md)
 * [Interfaces](smart-contracts/interfaces.md)
 
