@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The core contract that is used on Zesty Market are the market contracts for decentralized advertising market. V1 does not include validation of advertising slots, buyers have to trust sellers to not be malicious. Validation was not included to reduce the complexity of the system and is our minimal viable contract.
+The core contract that is used on Zesty Market are the market contracts for decentralized advertising market. The market is mainly built on 2 participants, advertisement buyers and advertisement sellers. 
+
+V1 does not include validation of advertising slots, buyers have to trust sellers to not be malicious. Validation was not included to reduce the complexity of the system and is our minimal viable contract.
 
 V2 will eventually include validation of the advertising slots, this will be done through a set of Proof of Authority \(POA\) validators on the system. Progressive decentralization will be introduced once the POA validation is stabilized.
 
