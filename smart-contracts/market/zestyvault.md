@@ -34,7 +34,7 @@ function getDepositor(uint256 _tokenId) public virtual view returns (address)
 
 #### isDepositor
 
-Returns a bool whether the msg.sender is the depositor for a given token id
+Returns a bool whether the `msg.sender` is the depositor for a given token id
 
 ```text
 function isDepositor(uint256 _tokenId) public virtual view returns (bool)
@@ -68,7 +68,7 @@ function onERC721Received(address, address, uint256, bytes memory) public virtua
 
 #### authorizeOperator
 
-Authorizes and operator for msg.sender
+Authorizes an operator for `msg.sender`
 
 ```text
 function authorizeOperator(address _operator) public virtual
@@ -76,7 +76,7 @@ function authorizeOperator(address _operator) public virtual
 
 #### revokeOperator
 
-Revokes an operator for msg.sender
+Revokes an operator for `msg.sender`
 
 ```text
 function revokeOperator(address _operator) public virtual
