@@ -12,10 +12,8 @@ The smart contracts used at Zesty Market can be broken down into five sections:
 2. **Governance** These are contracts used by Zesty Market for governance and token incentives. Governance is administered on Zesty Market using a modified version of Compound Finance's Token contract, GovernorAlpha contract, and Timelock contract. Staking rewards is introduced through a fork of Synthetix's contracts. An additional TokenVesting contract is introduced by us to manage vesting schedules of core team members.  
 3. **Games**
 
-   These are experiments done by Zesty Market to improve a Twitch streamer's engagement and to help streamers monetize using web3 technologies\)  
+   These are experiments done by Zesty Market to improve a Twitch streamer's engagement and to help streamers monetize using web3 technologies\)
 
-4. **Utils** The utils section consist of contracts adapted from [openzeppelin-contract version 3.4](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v3.4/contracts) and other helper functions that are used in the three sections above. 
+4. **Utils** The utils section consist of contracts adapted from [openzeppelin-contract version 3.4](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v3.4/contracts) and other helper functions that are used in the three sections above.
 5. **Interfaces** The interfaces section likewise with **Utils** consist of contracts adapted from [openzeppelin-contract version 3.4](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v3.4/contracts) and other interfaces that are used in the three sections above.
-
-
 

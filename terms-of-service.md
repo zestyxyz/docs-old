@@ -1,6 +1,6 @@
 # Terms of Service
 
-### 1. Introduction
+## 1. Introduction
 
 In these Zesty Market General Terms of Use \(“Terms”\), “Zesty Market", "we" and "us" refers to Zesty Market and the website [https://www.zesty.market](https://zesty.market) \("the Site"\). These Terms apply to you \(“you”\) as a user of the Site and Zesty Market, including all the products, services, tools and information made available on the Site.
 
@@ -16,11 +16,11 @@ Our Privacy Policy and Cookie Policy also apply to your use of the Site.
 
 If you have any queries in relation to the Site or the information on it, please contact us on zestymarket@protonmail.com.
 
-### 2. Site
+## 2. Site
 
 As part of the Site, Zesty Market provides access to a decentralised finance application \(“Application”\) on the Ethereum blockchain, that allows lenders or borrowers of Ethereum assets \(“Cryptocurrency assets”\) to transact using smart contracts \(“Smart Contracts”\).
 
-### 3. Access to the Site
+## 3. Access to the Site
 
 Access to the Site is provided on a “as is” and “as available” basis only. We do not guarantee that the Site, or any content on it, will always be available or uninterrupted. From time to time, access may be interrupted, suspended or restricted, including because of a fault, error or unforeseen circumstances or because we are carrying out planned maintenance.
 
@@ -56,17 +56,17 @@ Accordingly, you expressly agree that:
 1. you assume all risk in connection with your access and use of the Site, the Application and the Smart Contracts;
 2. you expressly waive and release Zesty Market from any and all liability, claims, causes of action, or damages arising from or in any way related to your use of the Site, the Application or the Smart Contracts.
 
-### 4. **Third-Party Links**
+## 4. **Third-Party Links**
 
 The Site may contain hyperlinks or references to third party websites. Any such hyperlinks or references are provided for your information and convenience only. We have no control over third party websites and accept no legal responsibility for any content, material or information contained in them. The display of any hyperlink and reference to any third-party website does not mean that we endorse that third party's website, products or services. Your use of a third-party site may be governed by the terms and conditions of that third-party site.
 
-### 5. Privacy Policy and Cookie Policy
+## 5. Privacy Policy and Cookie Policy
 
 Certain areas of our website may record and collect information about you. You can find more information about how we will process your personal information in our Privacy Policy.
 
 When you use the Site, we may collect information about your computer and your interaction with the Site. See our Cookie Policy for more information.
 
-### 6. Intellectual Property Rights
+## 6. Intellectual Property Rights
 
 We are the owner of all intellectual property rights in the Site and the material published on them. These works are protected by copyright laws and all such rights are reserved.
 
@@ -76,7 +76,7 @@ You agree not to monitor, use or copy our web pages without our prior consent. A
 
 You will retain ownership of all copyright in data you upload or submit to the Site. You grant us a worldwide, royalty-free, irrevocable licence to use, copy, distribute or publish and send this data in any manner.
 
-### 7. Disclaimers
+## 7. Disclaimers
 
 We do not guarantee that the Site will be secure or free from bugs or viruses.
 
@@ -90,7 +90,7 @@ Nothing included in the site constitutes an offer or solicitation to sell, or di
 
 From time to time, reference may be made to data we have gathered. These references may be selective or may be partial. As markets change continuously, previously published information and data may not be current and should not be relied upon.
 
-### General
+## General
 
 We may perform any of our obligations, and exercise any of the rights granted to us under these Terms, through a third-party. We may assign any or all our rights and obligations under these Terms to any third-party.
 
@@ -108,7 +108,7 @@ Any dispute, controversy, or claim arising out of or in relation to these Terms,
 
 With respect to all persons and entities, regardless of whether they have obtained or used the site for personal, commercial or other purposes, all disputes, controversies or claims must be brought in the parties’ individual capacity, and not as a plaintiff or class member in any purported class action, collective action or other representative proceeding. This waiver applies to class arbitration, and, unless we agree otherwise, the arbitrator may not consolidate more than one person’s claims. You agree that, by entering into this agreement, you and Zesty Market are each waiving the right to a trial by jury or to participate in a class action, collective action, or other representative proceeding of any kind.
 
-### Contacting Us
+## Contacting Us
 
 Should you have any question about these Terms, or wish to contact us for any reason whatsoever, please contact one of the administrators of our [Discord group](https://discord.com/invite/hSXTGvAcSs).
 
