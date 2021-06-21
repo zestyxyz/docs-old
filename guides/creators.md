@@ -4,33 +4,33 @@ description: Monetize your space.
 
 # Creators
 
-Before starting this tutorial, make sure you switch to "Publisher" mode so you can see all of the features available to you.
+Before starting this tutorial, make sure you switch to "Creator" mode so you can see all of the features available to you.
 
-![](../.gitbook/assets/image%20%287%29.png)
+![Outdated Image](../.gitbook/assets/image%20%287%29.png)
 
 ## Make an Ad Slot
 
 The first thing you want to do is create an ad slot that allows you to group multiple NFTs together. To begin creating an ad slot, click on "Ad Slots".
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![Outdated Image](../.gitbook/assets/image%20%2814%29.png)
 
-When you're first starting out, you won't have any ad slots. That's ok, we'll create a new one now.
+When you're first starting out, you won't have any ad slots. That's okay, we'll create a new one now.
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![Outdated Image](../.gitbook/assets/image%20%2811%29.png)
 
 Give your ad slot a name, like "Alice's Gaming Stream". For the location URL, use your Twitch profile URL if you're going to be using OBS, or use the URL of your WebXR experience if you're going to be using Zesty's A-Frame/three.js SDKs. Give a simple description and an image for advertisers to be able to get a sense of what your space looks like.
 
-![](../.gitbook/assets/image%20%281%29.png)
+![Outdated Image](../.gitbook/assets/image%20%281%29.png)
 
 After you've filled out all of the necessary information, click "Done". After all necessary information is uploaded to IPFS \(our storage protocol\), you'll be redirected to view all of your ad slots!
 
-![](../.gitbook/assets/image%20%285%29.png)
+![Outdated Image](../.gitbook/assets/image%20%285%29.png)
 
 ## Integrating Zesty
 
 Now that you've created an ad slot, click on the "information" button to see integration instructions.
 
-![](../.gitbook/assets/image%20%284%29.png)
+![Outdated Image](../.gitbook/assets/image%20%284%29.png)
 
 You will find the instructions on this page for integrating the ad slot into three.js, A-Frame and OBS. You will only need to use one.
 
@@ -69,11 +69,11 @@ scene.add(zestyAd);`
 
 Now that you have an ad slot which represents your digital space, you can mint an NFT to sell to an advertiser/sponsor. You'll start with none, but click on "Mint New" to get started.
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![Outdated Image](../.gitbook/assets/image%20%2813%29.png)
 
 Once you've selected your ad slot from the drop-down, select a date range you would like to offer the ad slot for.
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![Outdated Image](../.gitbook/assets/image%20%2812%29.png)
 
 After you've selected the desired date range, click on "Mint". This step will require gas.
 
