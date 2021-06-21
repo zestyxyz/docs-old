@@ -29,8 +29,9 @@
 * [Governance](smart-contracts/governance/README.md)
   * [ZestyToken/GovernorAlpha/Timelock](smart-contracts/governance/zestytoken.md)
   * [TokenVesting](smart-contracts/governance/tokenvesting.md)
-  * [StakingRewards](smart-contracts/governance/stakingrewards.md)
   * [RewardDistributor](smart-contracts/governance/rewarddistributor.md)
+  * [RewardRecipient](smart-contracts/governance/rewardrecipient.md)
+  * [StakingRewards](smart-contracts/governance/stakingrewards.md)
 
 ## Resources
 
