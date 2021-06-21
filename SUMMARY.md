@@ -23,6 +23,7 @@
 * [Overview](smart-contracts/overview.md)
 * [Market](smart-contracts/market/README.md)
   * [ZestyNFT](smart-contracts/market/zestynft.md)
+  * [ZestyVault](smart-contracts/market/zestyvault.md)
   * [ZestyMarket\_ERC20\_V1\_1](smart-contracts/market/zestymarket_erc20_v1_1.md)
   * [ZestyMarket\_ERC20\_V2](smart-contracts/market/zestymarket_erc20_v2.md)
 * [Governance](smart-contracts/governance/README.md)
