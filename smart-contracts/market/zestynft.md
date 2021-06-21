@@ -4,15 +4,15 @@
 
 ZestyNFT is used by sellers of advertising space to define and financialize a digital space. A ZestyNFT is able to accumulate ZestyTokens which can be retrieved upon burning the ZestyNFT. This helps to set a floor price for ZestyNFTs.
 
-ZestyNFT follows the ERC721 specification adding it on with the ERC721Metadata, ERC721Enumerable extensions. Information on the ERC721 specification can be found on [EIP-721](https://eips.ethereum.org/EIPS/eip-721). Additional state changing functions are mint, burn, setTokenURI, lockZestyToken. The specifications described below are the functionality that were added.
+ZestyNFT follows the ERC721 specification adding it on with the ERC721Metadata, ERC721Enumerable extensions. Information on the ERC721 specification can be found on [EIP-721](https://eips.ethereum.org/EIPS/eip-721). Additional state changing functions are `mint`, `burn`, `setTokenURI`, `lockZestyToken`. The specifications described below are the functionality that were added.
 
-The URIs used on ZestyNFT like other URIs on Zesty Market will be an IPFS hash. The files can be hosted on IPFS using a IPFS provider, Filecoin, or Arweave.
+ZestyNFT's URIs, like other URIs on Zesty Market, will be an IPFS hash. The files can be hosted on IPFS using an IPFS provider, Filecoin, or Arweave.
 
 ## Specifications 
 
 ### Constructor
 
-ZestyNFT is and Ownable contract, the owner of the ZestyNFT will be set to the deployer initially. The only control the owner has over the ZestyNFT contract is setting the ZestyToken address when ZestyToken is deployed. The zestyTokenAddress will be set to the 0 address initially.
+ZestyNFT is an Ownable contract. The owner of the ZestyNFT will be set to the deployer initially. The only control the owner has over the ZestyNFT contract is setting the ZestyToken address when ZestyToken is deployed. The zestyTokenAddress will be set to the 0 address initially.
 
 ```text
 constructor(address owner_, address zestyTokenAddress_) 
@@ -58,7 +58,7 @@ function setZestyTokenAddress(address zestyTokenAddress_) public onlyOwner {
 
 #### mint
 
-Mints a ZestyNFT, the creator of the NFT can set the URI of the ZestyNFT. The URI should be an IPFS hash and should point to a json file which contains other data. The format of the json file would follow the [ERC1155 metadata specification](https://eips.ethereum.org/EIPS/eip-1155) with the omission of a decimals field as this is an ERC721 token. 
+Mints a ZestyNFT. The creator of the NFT can set the URI of the ZestyNFT. The URI should be an IPFS hash and should point to a json file which contains other data. The format of the json file would follow the [ERC1155 metadata specification](https://eips.ethereum.org/EIPS/eip-1155) with the omission of a decimals field as this is an ERC721 token. 
 
 The URI can be modified by the creator of the NFT when the NFT is owned by the creator. The URI cannot be modified once the NFT leaves the creator's address.
 
@@ -76,7 +76,7 @@ function lockZestyToken(uint256 _tokenId, uint256 _value) public nonReentrant
 
 #### burn
 
-Burns a ZestyNFT, and transfers locked ZestyTokens to the caller of the function this may be an approved address or the owner of the ZestyNFT. Users should ensure that they do not approve unsafe addresses to manage their ZestyNFT.
+Burns a ZestyNFT and transfers locked ZestyTokens to the caller of the function. The caller may be an approved address or the owner of the ZestyNFT. Users should ensure that they do not approve unsafe addresses to manage their ZestyNFT.
 
 ```text
 function burn(uint256 _tokenId) public nonReentrant
