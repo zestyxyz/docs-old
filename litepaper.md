@@ -36,10 +36,6 @@ Zesty Market recognizes that the WebXR space is presently small despite future p
 
 In online advertising, there are three key stakeholders: Advertisers, Publishers/Creators, and Consumers. Advertisers buy advertising slots from publishers to leverage their reach in order to get information out to consumers. This structure is the basis of the attention economy that the internet is built upon. In the Web 2.0 model, the relationship between the key stakeholders is mediated by a centralized third party who mediates the flow of money as well as the flow of attention. Zesty Market proposes a decentralized structure for how this could be implemented.
 
-All key transactions on Zesty Market are conducted using $ZEST, which is an ERC-20 token. $ZEST tokens can be acquired from cryptocurrency exchanges. As of April 8, 2021, [it is possible to obtain $ZEST tokens on Rinkeby Test Network via Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x71d13b5a03967b57dce4b55531487150d2640266) to test the application on the Rinkeby Test Network.
-
-In the future, Zesty Market will also provide fiat-to-crypto on/offramp using [Transak](https://transak.com/), [DharmaOS](https://github.com/dharmaprotocol/dharmaOS), and/or [Circle](https://www.circle.com/en/). Users will be able to easily purchase $ZEST and convert to and from fiat with minimal friction.
-
 The sale and fulfillment of the advertising slot are done in two parts:
 
 1. A Dutch Auction for price discovery of the advertising slot
@@ -55,9 +51,9 @@ $$V(T_{i}) = V(T_{0}) - (T_{i} - T_{0}) \times \frac{V(T_{0})}{T_{0} - T_{n}}$$
 
 **Definitions**
 
-$$V(T_i)$$refers to the current NFT price in ZEST tokens
+ $$ V(T_i) $$refers to the current NFT price in some ERC20 tokens
 
-$$V(T_{0})$$refers to the starting price of the NFT in ZEST tokens
+$$ V(T_{0}) $$refers to the starting price of the NFT in ERC20 tokens
 
 $$T_i$$refers to the current time in Unix time
 

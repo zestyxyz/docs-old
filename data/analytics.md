@@ -14,13 +14,13 @@ Below are the data fields that we collect from our SDK:
 
 The unique ID of the request, which becomes the instance's ID in IPFS.
 
-**publisher**
+**creator**
 
-This is the wallet address of the publisher the ad will be paying out to.
+This is the wallet address of the creator the ad will be paying out to.
 
-**tokenGroup**
+**adSpace**
 
-The unique identifier for the ad slot/NFT which is owned by the publisher and listed/sold on the Zesty Market.
+The unique identifier for the NFT owned by the creator and listed/sold on the Zesty Market.
 
 **uri**
 

@@ -21,18 +21,17 @@
 ## Smart Contracts
 
 * [Overview](smart-contracts/overview.md)
-* [Governance](smart-contracts/governance/README.md)
-  * [ZestyToken](smart-contracts/governance/zestytoken.md)
-  * [GovernorAlpha](smart-contracts/governance/governoralpha.md)
-  * [Timelock](smart-contracts/governance/timelock.md)
-  * [TokenVesting](smart-contracts/governance/tokenvesting.md)
-  * [StakingRewards](smart-contracts/governance/stakingrewards.md)
-  * [RewardDistributor](smart-contracts/governance/rewarddistributor.md)
 * [Market](smart-contracts/market/README.md)
+  * [ZestyNFT](smart-contracts/market/zestynft.md)
+  * [ZestyVault](smart-contracts/market/zestyvault.md)
   * [ZestyMarket\_ERC20\_V1\_1](smart-contracts/market/zestymarket_erc20_v1_1.md)
   * [ZestyMarket\_ERC20\_V2](smart-contracts/market/zestymarket_erc20_v2.md)
-* [Utils](smart-contracts/utils.md)
-* [Interfaces](smart-contracts/interfaces.md)
+* [Governance](smart-contracts/governance/README.md)
+  * [ZestyToken/GovernorAlpha/Timelock](smart-contracts/governance/zestytoken.md)
+  * [TokenVesting](smart-contracts/governance/tokenvesting.md)
+  * [RewardDistributor](smart-contracts/governance/rewarddistributor.md)
+  * [RewardRecipient](smart-contracts/governance/rewardrecipient.md)
+  * [StakingRewards](smart-contracts/governance/stakingrewards.md)
 
 ## Resources
 
