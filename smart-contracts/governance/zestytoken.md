@@ -535,7 +535,7 @@ const tx = await gov.methods.castVoteBySig(proposalId, false, v, r, s).send({});
 
 ### Timelock
 
-The Timelock is a decentralized owner of ZestyMarket and can execute any functions and store token like a treasury. 
+The Timelock is a decentralized owner of ZestyMarket and can execute any functions and store token like a treasury. We will refer to the Timelock contract and Zesty DAO interchangeably.
 
 The Timelock has a hard-coded minimum delay of 2 days, which is the least amount of notice possible for a governance action. Each proposed action will be published at a minimum of 2 days in the future from the time of announcement. Major upgrades, such as changing the risk system, may have a 14 day delay.
 
