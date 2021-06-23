@@ -8,15 +8,15 @@ ZestyTokens adopts the Governor Alpha version of Compound's [COMP token specific
 
 Likewise with Compound protocol, Zesty Market will be governed and upgraded by ZESTY token holders. The components are; ZestyToken, GovernorAlpha, and Timelock. Proposals are much more general on Zesty Market as compared to Compound. The Timelock contract can be treated as the decentralized owner of ZestyMarket.
 
-ZestyTokens has a fixed supply of 100,000,000 ZESTY. Any address with more than 1,000,000 ZESTY \(1% of ZESTY\) delegated to it may propose governance actions, which are executable code. When a proposal is created, the community can submit their votes during a 3 day voting period. If a majority, and at least 7,000,000 \(7% of  ZESTY\) votes are cast for the proposal, it is queued in the Timelock, and can be implemented after a minimum of 2 days.
+ZestyTokens has a fixed supply of 100,000,000 ZESTY. Any address with more than 1,000,000 ZESTY \(1% of ZESTY\) delegated to it may propose governance actions, which are executable code. When a proposal is created, the community can submit their votes during a 3 day voting period. If a majority, and at least 7,000,000 \(7% of ZESTY\) votes are cast for the proposal, it is queued in the Timelock, and can be implemented after a minimum of 2 days.
 
-![Flow of Compound&apos;s Governor Alpha](../../.gitbook/assets/image.png)
+![Flow of Compound&apos;s Governor Alpha](../../.gitbook/assets/image%20%282%29%20%282%29.png)
 
-### ZestyToken
+## ZestyToken
 
 ZestyToken is an [ERC-20](https://web.archive.org/web/20210111014331mp_/https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) token that allows the owner to delegate voting rights to any address, including their own address. Changes to the owner’s token balance automatically adjust the voting rights of the delegate.
 
-### Delegate
+## Delegate
 
 Delegate votes from the sender to the delegatee. Users can delegate to 1 address at a time, and the number of votes added to the delegatee’s vote count is equivalent to the balance of COMP in the user’s account. Votes are delegated from the current block and onward, until the sender delegates again, or transfers their ZESTY.
 
@@ -43,7 +43,7 @@ zesty.delegate(delegateeAddress);
 const tx = await zesty.methods.delegate(delegateeAddress).send({ from: sender });
 ```
 
-### Delegate By Signature
+## Delegate By Signature
 
 Delegate votes from the signatory to the delegatee. This method has the same purpose as Delegate but it instead enables offline signatures to participate in Zesty Market's governance vote delegation. For more details on how to create an offline signature, review [EIP-712](https://web.archive.org/web/20210111014331mp_/https://eips.ethereum.org/EIPS/eip-712).
 
@@ -74,7 +74,7 @@ zesty.delegateBySig(delegateeAddress, nonce, expiry, v, r, s);
 const tx = await zesty.methods.delegateBySig(delegateeAddress, nonce, expiry, v, r, s).send({});
 ```
 
-### Get Current Votes
+## Get Current Votes
 
 Gets the balance of votes for an account as of the current block.
 
@@ -101,7 +101,7 @@ const account = '0x123...'; // contract address
 const votes = await zesty.methods.getCurrentVotes(account).call();
 ```
 
-### Get Prior Votes
+## Get Prior Votes
 
 Gets the prior number of votes for an account at a specific block number. The block number passed must be a finalized block or the function will revert.
 
@@ -128,7 +128,7 @@ uint priorVotes = zesty.getPriorVotes(account, blockNumber);
 const priorVotes = await zesty.methods.getPriorVotes(account, blockNumber).call();
 ```
 
-### Key Events
+## Key Events
 
 | Event | Description |
 | :--- | :--- |
@@ -140,11 +140,11 @@ const priorVotes = await zesty.methods.getPriorVotes(account, blockNumber).call(
 | ProposalQueued\(uint id, uint eta\) | An event emitted when a proposal has been [queued](https://web.archive.org/web/20210111014331if_/https://compound.finance/docs/governance#queue) in the [Timelock](https://web.archive.org/web/20210111014331if_/https://compound.finance/docs/governance#timelock). |
 | ProposalExecuted\(uint id\) | An event emitted when a proposal has been [executed](https://web.archive.org/web/20210111014331if_/https://compound.finance/docs/governance#execute) in the [Timelock](https://web.archive.org/web/20210111014331if_/https://compound.finance/docs/governance#timelock). |
 
-### Governor Alpha
+## Governor Alpha
 
 Governor Alpha is the governance module of the protocol; it allows addresses with more than 1,000,000 ZESTY to propose changes to the protocol. Addresses that held voting weight, at the start of the proposal, invoked through the getpriorvotes function, can submit their votes during a 3 day voting period. If a majority, and at least 7,000,000 votes are cast for the proposal, it is queued in the Timelock, and can be implemented after 2 days.
 
-### Quorum Votes
+## Quorum Votes
 
 The required minimum number of votes in support of a proposal for it to succeed.
 
@@ -169,7 +169,7 @@ uint quorum = gov.quorumVotes();
 const quorum = await gov.methods.quorumVotes().call();
 ```
 
-### Proposal Threshold
+## Proposal Threshold
 
 The minimum number of votes required for an account to create a proposal.
 
@@ -194,7 +194,7 @@ uint threshold = gov.proposalThreshold();
 const threshold = await gov.methods.proposalThreshold().call();
 ```
 
-### Proposal Max Operations
+## Proposal Max Operations
 
 The maximum number of actions that can be included in a proposal. Actions are functions calls that will be made when a proposal succeeds and executes.
 
@@ -219,7 +219,7 @@ uint operations = gov.proposalMaxOperations();
 const operations = await gov.methods.proposalMaxOperations().call();
 ```
 
-### Voting Delay
+## Voting Delay
 
 The number of Ethereum blocks to wait before voting on a proposal may begin. This value is added to the current block number when a proposal is created.
 
@@ -244,7 +244,7 @@ uint blocks = gov.votingDelay();
 const blocks = await gov.methods.votingDelay().call();
 ```
 
-### Voting Period
+## Voting Period
 
 The duration of voting on a proposal, in Ethereum blocks.
 
@@ -269,7 +269,7 @@ uint blocks = gov.votingPeriod();
 const blocks = await gov.methods.votingPeriod().call();
 ```
 
-### Propose
+## Propose
 
 Create a Proposal to call any function that would be executed by Timelock.
 
@@ -305,7 +305,7 @@ uint proposalId = gov.propose(targets, values, signatures, calldatas, descriptio
 const tx = gov.methods.propose(targets, values, signatures, calldatas, description).send({ from: sender });
 ```
 
-### Queue
+## Queue
 
 After a proposal has succeeded, any address can call the queue method to move the proposal into the Timelock queue. A proposal can only be queued if it has succeeded.
 
@@ -331,11 +331,11 @@ gov.queue(proposalId);
 const tx = gov.methods.queue(proposalId).send({ from: sender });
 ```
 
-### Execute
+## Execute
 
 After the Timelock delay period, any account may invoke the execute method to apply the changes from the proposal to the target contracts. This will invoke each of the actions described in the proposal.
 
-This function is payable so the Timelock contract can invoke payable functions that were selected in the proposal. 
+This function is payable so the Timelock contract can invoke payable functions that were selected in the proposal.
 
 **Governor Alpha**
 
@@ -359,7 +359,7 @@ gov.execute(proposalId).value(999).gas(999)();
 const tx = gov.methods.execute(proposalId).send({ from: sender, value: 1 });
 ```
 
-### Cancel
+## Cancel
 
 Cancel a proposal that has not yet been executed. The Guardian is the only one who may execute this unless the proposer does not maintain the delegates required to create a proposal. If the proposer does not have more delegates than the proposal threshold, anyone can cancel the proposal.
 
@@ -385,7 +385,7 @@ gov.cancel(proposalId);
 const tx = gov.methods.cancel(proposalId).send({ from: sender });
 ```
 
-### Get Actions
+## Get Actions
 
 Gets the actions of a selected proposal. Pass a proposal ID and get the targets, values, signatures and calldatas of that proposal.
 
@@ -397,11 +397,10 @@ function getActions(uint proposalId) returns (uint proposalId) public view retur
 
 * proposalId: ID of a proposal in which to get its actions.
 * RETURN: Reverts if the proposal ID is invalid. If successful, the following 4 references are returned.
-
-1. Array of addresses of contracts the proposal calls.
-2. Array of unsigned integers the proposal uses as values.
-3. Array of strings of the proposal’s signatures.
-4. Array of calldata bytes of the proposal.
+* Array of addresses of contracts the proposal calls.
+* Array of unsigned integers the proposal uses as values.
+* Array of strings of the proposal’s signatures.
+* Array of calldata bytes of the proposal.
 
 **Solidity**
 
@@ -417,7 +416,7 @@ uint proposalId = 123;
 const {0: targets, 1: values, 2: signatures, 3: calldatas} = gov.methods.getActions(proposalId).call();
 ```
 
-### Get Receipt
+## Get Receipt
 
 Gets a proposal ballot receipt of the indicated voter.
 
@@ -447,7 +446,7 @@ const result = await gov.methods.getReceipt(proposalId, voterAddress).call();
 const { hasVoted, support, votes } = result;
 ```
 
-### State
+## State
 
 Gets the proposal state for the specified proposal. The return value, ProposalState is an enumerated type defined in the Governor Alpha contract.
 
@@ -476,7 +475,7 @@ result = await gov.methods.state(proposalId).call();
 const proposalState = proposalStates[result];
 ```
 
-### Cast Vote
+## Cast Vote
 
 Cast a vote on a proposal. The account's voting weight is determined by the number of votes the account had delegated to it at the time the proposal state became active.
 
@@ -503,7 +502,7 @@ gov.castVote(proposalId, true);
 const tx = gov.methods.castVote(proposalId, false).send({ from: sender });
 ```
 
-### Cast Vote By Signature
+## Cast Vote By Signature
 
 Cast a vote on a proposal. The account's voting weight is determined by the number of votes the account had delegated at the time that proposal state became active. This method has the same purpose as Cast Vote but it instead enables offline signatures to participate in Compound governance voting. For more details on how to create an offline signature, review [EIP-712](https://web.archive.org/web/20210111014331mp_/https://eips.ethereum.org/EIPS/eip-712).
 
@@ -533,7 +532,7 @@ gov.castVoteBySig(proposalId, true, v, r, s);
 const tx = await gov.methods.castVoteBySig(proposalId, false, v, r, s).send({});
 ```
 
-### Timelock
+## Timelock
 
 The Timelock is a decentralized owner of ZestyMarket and can execute any functions and store token like a treasury. We will refer to the Timelock contract and Zesty DAO interchangeably.
 
@@ -541,8 +540,7 @@ The Timelock has a hard-coded minimum delay of 2 days, which is the least amount
 
 The Timelock is controlled by the governance module; pending and completed governance actions can be monitored on the [Timelock Dashboard](https://web.archive.org/web/20210111014331mp_/https://app.compound.finance/timelock).
 
-### Pause Guardian
+## Pause Guardian
 
-The Pause Guardian address is assigned to the Timelock contract.  
-
+The Pause Guardian address is assigned to the Timelock contract.
 

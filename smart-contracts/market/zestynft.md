@@ -8,7 +8,7 @@ ZestyNFT follows the ERC721 specification adding it on with the ERC721Metadata, 
 
 ZestyNFT's URIs, like other URIs on Zesty Market, will be an IPFS hash. The files can be hosted on IPFS using an IPFS provider, Filecoin, or Arweave.
 
-## Specifications 
+## Specifications
 
 ### Constructor
 
@@ -17,7 +17,7 @@ ZestyNFT is an Ownable contract. The owner of the ZestyNFT will be set to the de
 ```text
 constructor(address owner_, address zestyTokenAddress_) 
     Ownable(owner_)
-    ERC721("Zesty Market NFT", "ZESTYNFT") 
+    ERC721("Zesty Market NFT", "ZESTYNFT")
 ```
 
 ### Getter Functions
@@ -35,7 +35,7 @@ function getTokenData(uint256 tokenId)
         uint256 timeCreated,
         uint256 zestyTokenValue,
         string memory uri
-    ) 
+    )
 ```
 
 #### getZestyTokenAddress
@@ -58,7 +58,7 @@ function setZestyTokenAddress(address zestyTokenAddress_) public onlyOwner {
 
 #### mint
 
-Mints a ZestyNFT. The creator of the NFT can set the URI of the ZestyNFT. The URI should be an IPFS hash and should point to a json file which contains other data. The format of the json file would follow the [ERC1155 metadata specification](https://eips.ethereum.org/EIPS/eip-1155) with the omission of a decimals field as this is an ERC721 token. 
+Mints a ZestyNFT. The creator of the NFT can set the URI of the ZestyNFT. The URI should be an IPFS hash and should point to a json file which contains other data. The format of the json file would follow the [ERC1155 metadata specification](https://eips.ethereum.org/EIPS/eip-1155) with the omission of a decimals field as this is an ERC721 token.
 
 The URI can be modified by the creator of the NFT when the NFT is owned by the creator. The URI cannot be modified once the NFT leaves the creator's address.
 
@@ -89,8 +89,4 @@ Allows the creator to modify the URI when the NFT is in the creator's possession
 ```text
 function setTokenURI(uint256 _tokenId, string memory _uri) public
 ```
-
-
-
-
 

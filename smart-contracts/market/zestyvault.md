@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Zesty Vault is an abstract contract which specifies how Zesty NFTs would be deposited and withdrawn. It allows the assignment of operators to any address to act on behalf of the address. 
+Zesty Vault is an abstract contract which specifies how Zesty NFTs would be deposited and withdrawn. It allows the assignment of operators to any address to act on behalf of the address.
 
 ## Specifications
 
@@ -123,8 +123,4 @@ Allow only depositor or operator
 ```text
 modifier onlyDepositorOrOperator(uint256 _tokenId)
 ```
-
-
-
-
 

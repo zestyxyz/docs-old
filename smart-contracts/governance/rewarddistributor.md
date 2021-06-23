@@ -25,7 +25,7 @@ constructor(address owner_, address rewardTokenAddress_) Ownable(owner_)
 Returns the address for the reward token
 
 ```text
-function getRewardToken() public view returns(address) 
+function getRewardToken() public view returns(address)
 ```
 
 #### getRecipient

@@ -4,13 +4,13 @@ description: ZestyMarket V1.1 with no validation
 
 # ZestyMarket\_ERC20\_V1\_1
 
-## Introduction 
+## Introduction
 
-Zesty Market V1 follows the following flow. 
+Zesty Market V1 follows the following flow.
 
 **Phase 0: Setup**
 
-1.  Buyers would create campaigns for their advertising slots. These campaigns cannot be edited and can only be created. The campaigns cannot be edited so as to ensure that a malicious buyer would not be able to change the uri \(which is an ipfs hash\) once a seller has agreed to advertise the campaign. 
+1. Buyers would create campaigns for their advertising slots. These campaigns cannot be edited and can only be created. The campaigns cannot be edited so as to ensure that a malicious buyer would not be able to change the uri \(which is an ipfs hash\) once a seller has agreed to advertise the campaign. 
 2. Sellers would deposit ZestyNFTs and set whether they would require approvals. After depositing the ZestyNFT, sellers would be able to create auctions. 
 
 **Phase 1: Auction**
@@ -20,7 +20,7 @@ Zesty Market V1 follows the following flow.
 
 **Phase 2: Contract**
 
-1. Zesty Market ****V1 contract only allows withdrawals. When the contract is over, the seller will be able to withdraw locked funds in the contract.
+1. Zesty Market _\*\*_V1 contract only allows withdrawals. When the contract is over, the seller will be able to withdraw locked funds in the contract.
 
 ## Specifications
 
@@ -32,7 +32,7 @@ The constructor requires the a transaction token address \(any ERC20 compatible 
 constructor(
     address txTokenAddress_,
     address zestyNFTAddress_
-) 
+)
 ```
 
 ### Getter Functions
@@ -58,26 +58,26 @@ function getSellerNFTSetting(uint256 _tokenId)
         address seller,
         uint8 autoApprove,
         uint256 inProgressCount
-    ) 
+    )
 ```
 
 #### getSellerAuctionPrice
 
 Returns the current auction price of the auction. The price is a linearly decreasing function which follows the following equation:
 
-$$ V(T_{i}) = V(T_{0}) - (T_{i} - T_{0}) \times \frac{V(T_{0})}{T_{0} - T_{n}} $$
+$$V(T_{i}) = V(T_{0}) - (T_{i} - T_{0}) \times \frac{V(T_{0})}{T_{0} - T_{n}}$$
 
 **Definitions**
 
- $$ V(T_i) $$refers to the current NFT price in some ERC20 tokens
+$$V(T_i)$$refers to the current NFT price in some ERC20 tokens
 
-$$ V(T_{0}) $$refers to the starting price of the NFT in some ERC20 tokens
+$$V(T_{0})$$refers to the starting price of the NFT in some ERC20 tokens
 
-$$ T_i $$refers to the current time in Unix time
+$$T_i$$refers to the current time in Unix time
 
-$$ T_0 $$refers to the starting time of the Dutch auction in Unix time
+$$T_0$$refers to the starting time of the Dutch auction in Unix time
 
-$$ T_n $$refers to the expiration time of the NFT timeslot in Unix time
+$$T_n$$refers to the expiration time of the NFT timeslot in Unix time
 
 ```text
 function getSellerAuctionPrice(uint256 _sellerAuctionId) public view returns (uint256)
@@ -108,7 +108,7 @@ function getSellerAuction(uint256 _sellerAuctionId)
 
 #### getBuyerCampaign
 
-Returns a buyer campaign. `buyer` refers to the buyer's address. `uri` refers to the campaign uri set by the buyer. This uri field would follow the [ERC1155 json specifications](https://eips.ethereum.org/EIPS/eip-1155). 
+Returns a buyer campaign. `buyer` refers to the buyer's address. `uri` refers to the campaign uri set by the buyer. This uri field would follow the [ERC1155 json specifications](https://eips.ethereum.org/EIPS/eip-1155).
 
 ```text
 function getBuyerCampaign(uint256 _buyerCampaignId)
@@ -141,7 +141,7 @@ function getContract(uint256 _contractId)
 
 #### buyerCampaignCreate
 
-Allows a buyer to create a campaign. Note that buyer campaign is append only, it can only be created and not deleted or edited. The uri field of the buyer campaign should point to a IPFS hash to ensure content integrity. This ensures that a seller of an advertising space would approve content that cannot be changed. 
+Allows a buyer to create a campaign. Note that buyer campaign is append only, it can only be created and not deleted or edited. The uri field of the buyer campaign should point to a IPFS hash to ensure content integrity. This ensures that a seller of an advertising space would approve content that cannot be changed.
 
 ```text
 function buyerCampaignCreate(string memory _uri) external
@@ -149,7 +149,7 @@ function buyerCampaignCreate(string memory _uri) external
 
 #### sellerNFTDeposit
 
-Allows a seller to deposit a NFT and set auto approval settings. Note that auto approval is a uint8 that acts as a boolean where 1 is False and 2 is True. The function uses the nonReentrant modifier. 
+Allows a seller to deposit a NFT and set auto approval settings. Note that auto approval is a uint8 that acts as a boolean where 1 is False and 2 is True. The function uses the nonReentrant modifier.
 
 ```text
 function sellerNFTDeposit(
@@ -170,7 +170,7 @@ function sellerNFTWithdraw(uint256 _tokenId) external onlyDepositor(_tokenId) no
 
 #### sellerNFTUpdate
 
-Allows a seller to update the autoApprove setting on the NFT. This function can be executed by the address that deposited the NFT or an appointed operator. 
+Allows a seller to update the autoApprove setting on the NFT. This function can be executed by the address that deposited the NFT or an appointed operator.
 
 ```text
 function sellerNFTUpdate(
@@ -194,7 +194,7 @@ function sellerBan(address _addr) external
 Allows a seller to unban a buyer.
 
 ```text
-function sellerUnban(address _addr) external 
+function sellerUnban(address _addr) external
 ```
 
 #### sellerAuctionCreateBatch
@@ -216,7 +216,7 @@ function sellerAuctionCreateBatch(
 
 #### sellerAuctionCancelBatch
 
-Allows to cancel an auction if it has no bids. 
+Allows to cancel an auction if it has no bids.
 
 ```text
 function sellerAuctionCancelBatch(uint256[] memory _sellerAuctionId) external
@@ -235,7 +235,7 @@ function sellerAuctionBidBatch(uint256[] memory _sellerAuctionId, uint256 _buyer
 Allows a buyer or operator for buyer to cancel a bid if the seller has not approved. This is to allow a buyer to retrieve the deposit if the seller does not approve. Returns to the buyer `pricePending` amount in the auction state.
 
 ```text
-function sellerAuctionBidCancelBatch(uint256[] memory _sellerAuctionId) external nonReentrant 
+function sellerAuctionBidCancelBatch(uint256[] memory _sellerAuctionId) external nonReentrant
 ```
 
 #### sellerAuctionApproveBatch

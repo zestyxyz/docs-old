@@ -51,9 +51,9 @@ $$V(T_{i}) = V(T_{0}) - (T_{i} - T_{0}) \times \frac{V(T_{0})}{T_{0} - T_{n}}$$
 
 **Definitions**
 
- $$ V(T_i) $$refers to the current NFT price in some ERC20 tokens
+$$V(T_i)$$refers to the current NFT price in some ERC20 tokens
 
-$$ V(T_{0}) $$refers to the starting price of the NFT in ERC20 tokens
+$$V(T_{0})$$refers to the starting price of the NFT in ERC20 tokens
 
 $$T_i$$refers to the current time in Unix time
 

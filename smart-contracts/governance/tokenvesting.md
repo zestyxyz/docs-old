@@ -26,11 +26,11 @@ function getZestyTokenAddress() public view returns (address)
 
 #### getVault
 
-Returns the state of a vault containing ZestyTokens on the contract.   
+Returns the state of a vault containing ZestyTokens on the contract.  
 `startTime` refers to the starting time of the vesting this is denoted by unix time in seconds.  
-`amount` refers to the the amount of tokens to be distributed to the recipient.   
-`amountClaimed` refers to the amount of tokens claimed by the recipient.   
-`vestingDuration` refers to the time taken for the tokens to fully vest in seconds. The end time of the vesting is thus `startTime + vestingDuration`.   
+`amount` refers to the the amount of tokens to be distributed to the recipient.  
+`amountClaimed` refers to the amount of tokens claimed by the recipient.  
+`vestingDuration` refers to the time taken for the tokens to fully vest in seconds. The end time of the vesting is thus `startTime + vestingDuration`.  
 `vestingCliff` refers to the duration where 0 tokens would be claimable, after the cliff tokens would be claimed following the vesting schedule. The end time of the vesting cliff is thus `startTime + vestingCliff`.
 
 ```text
@@ -57,7 +57,7 @@ amount, time >= startTime +vestingDuration \\ \\
 $$
 
 ```text
-function getAmountVested(address _recipient) public view  returns (uint256) 
+function getAmountVested(address _recipient) public view  returns (uint256)
 ```
 
 ### State Changing Functions
@@ -83,7 +83,7 @@ function newVault(
 Cancels the vault. This is a non-reentrant function and can only be called by the owner of the contract. It will transfer tokens that are already vested to the recipient. Tokens that are not vested would be transferred back to the owner.
 
 ```text
-function cancelVault(address _recipient) public onlyOwner nonReentrant 
+function cancelVault(address _recipient) public onlyOwner nonReentrant
 ```
 
 #### claimVault
@@ -91,12 +91,12 @@ function cancelVault(address _recipient) public onlyOwner nonReentrant
 Claims vested funds. This is a non-reentrant function and can be called by anyone. Address without a vault would be rejected. If there are no tokens claimable the call would be rejected. Otherwise, it would transfer vested tokens back to the caller.
 
 ```text
-function claimVault() public nonReentrant 
+function claimVault() public nonReentrant
 ```
 
 #### recoverERC20
 
-Claims lost ERC20 tokens, only allows claiming of ERC20 tokens that are not ZestyTokens. This function is implemented in case some one deposits ERC20 to the contract by accident. The ERC20 tokens will be transferred to the owner of the contract. This is a non-reentrant function and can only be called by the owner of the contract. 
+Claims lost ERC20 tokens, only allows claiming of ERC20 tokens that are not ZestyTokens. This function is implemented in case some one deposits ERC20 to the contract by accident. The ERC20 tokens will be transferred to the owner of the contract. This is a non-reentrant function and can only be called by the owner of the contract.
 
 ```text
 function recoverERC20(address tokenAddress, uint256 tokenAmount) external onlyOwner nonReentrant

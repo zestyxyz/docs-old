@@ -6,7 +6,7 @@ description: Forked from Synthetix's RewardDistributor
 
 ## Introduction
 
-Abstract contract which allow for the receipt of reward tokens given out by the reward distributor. 
+Abstract contract which allow for the receipt of reward tokens given out by the reward distributor.
 
 ## Specification
 
@@ -31,7 +31,7 @@ function rewardsDistributor() external view virtual returns (address)
 
 ### State Changing Functions
 
-#### notifyRewardAmount 
+#### notifyRewardAmount
 
 Virtual empty function that can be used in inherited contracts
 
@@ -44,7 +44,7 @@ function notifyRewardAmount(uint256 rewards) external virtual
 Allows the owner to set the address of the reward distributor
 
 ```text
-function setRewardsDistributor(address rewardsDistributor_) external virtual onlyOwner 
+function setRewardsDistributor(address rewardsDistributor_) external virtual onlyOwner
 ```
 
 #### onlyRewardsDistributor
