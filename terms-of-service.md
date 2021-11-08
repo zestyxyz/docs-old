@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-In these Zesty Market General Terms of Use \(“Terms”\), “Zesty Market", "we" and "us" refers to Zesty Market and the website [https://www.zesty.market](https://zesty.market) \("the Site"\). These Terms apply to you \(“you”\) as a user of the Site and Zesty Market, including all the products, services, tools and information made available on the Site.
+In these Zesty Market General Terms of Use (“Terms”), “Zesty Market", "we" and "us" refers to Zesty Market and the website [https://www.zesty.market](https://zesty.market) ("the Site"). These Terms apply to you (“you”) as a user of the Site and Zesty Market, including all the products, services, tools and information made available on the Site.
 
 Please read these Terms carefully before using the Site. These Terms apply to any person accessing the Site and by using the Site you agree to be bound by them. If you don’t want to be bound by them, you should not access the Site. By using the Site in any capacity, you agree that you have read and understood these Terms.
 
@@ -18,7 +18,7 @@ If you have any queries in relation to the Site or the information on it, please
 
 ## 2. Site
 
-As part of the Site, Zesty Market provides access to a decentralised finance application \(“Application”\) on the Ethereum blockchain, that allows lenders or borrowers of Ethereum assets \(“Cryptocurrency assets”\) to transact using smart contracts \(“Smart Contracts”\).
+As part of the Site, Zesty Market provides access to a decentralised finance application (“Application”) on the Ethereum blockchain, that allows lenders or borrowers of Ethereum assets (“Cryptocurrency assets”) to transact using smart contracts (“Smart Contracts”).
 
 ## 3. Access to the Site
 
@@ -38,10 +38,10 @@ You agree to access and use the Site only for its intended purpose and will not 
 
 1. make commercial use of the Site or any of its content without our express permission;
 2. attempt to hack, make unauthorised alterations to, gain unauthorised access to, or introduce any kind of malicious code to the Site by any means;
-3. reverse engineer or decompile \(whether in whole or in part\) any software available through the Site;
+3. reverse engineer or decompile (whether in whole or in part) any software available through the Site;
 4. make copies, modify, reproduce, transmit, alter or distribute all or any part of the Site or any material or information contained in it;
 5. use the Site for any purpose that is unlawful;
-6. use the Site to simulate communications from us or another service or entity in order to collect identity information, authentication credentials, or other information \(known as ‘phishing’\);
+6. use the Site to simulate communications from us or another service or entity in order to collect identity information, authentication credentials, or other information (known as ‘phishing’);
 7. use the Site in any manner that disrupts its operation;
 8. disguise or interfere in any way with the IP address of the computer you are using to access the Sites or otherwise take steps to prevent us from correctly identifying the actual IP address of the computer you are using whilst accessing the Site.
 
@@ -70,7 +70,7 @@ When you use the Site, we may collect information about your computer and your i
 
 We are the owner of all intellectual property rights in the Site and the material published on them. These works are protected by copyright laws and all such rights are reserved.
 
-[www.zesty.market](https://zesty.market) is the uniform resource locator \(‘URL’\) of Zesty Market. You will not make use of this URL \(or any other URL owned by us\) on another website or digital platform without our prior written consent.
+[www.zesty.market](https://zesty.market) is the uniform resource locator (‘URL’) of Zesty Market. You will not make use of this URL (or any other URL owned by us) on another website or digital platform without our prior written consent.
 
 You agree not to monitor, use or copy our web pages without our prior consent. Any unauthorised use or reproduction may be prosecuted.
 
@@ -102,13 +102,12 @@ If any of the provisions in these Terms are found to be illegal, invalid or unen
 
 All disclaimers, indemnities and exclusions in these Terms shall survive termination of the Terms and shall continue to apply during any suspension or any period during which the Site is not available for you to use for any reason whatsoever.
 
-These Terms and the documents referred to in them set out the entire agreement between you and us with respect to your use of the site, Zesty Market and the services provided via the site and supersede any and all prior or contemporaneous representations, communications or agreements \(written or oral\) made between you or us.
+These Terms and the documents referred to in them set out the entire agreement between you and us with respect to your use of the site, Zesty Market and the services provided via the site and supersede any and all prior or contemporaneous representations, communications or agreements (written or oral) made between you or us.
 
-Any dispute, controversy, or claim arising out of or in relation to these Terms, including the validity, invalidity, breach or termination thereof, shall be settled by arbitration in accordance with the Swiss Rules of International Arbitration of the Swiss Chambers of Commerce in force on the date when the Notice of Arbitration is submitted in accordance with these Rules. The number of arbitrators shall be one or three; the seat of the arbitration shall be determined by the arbitrator\(s\); the arbitral proceedings shall be conducted in English. The applicable law shall be Swiss law.
+Any dispute, controversy, or claim arising out of or in relation to these Terms, including the validity, invalidity, breach or termination thereof, shall be settled by arbitration in accordance with the Swiss Rules of International Arbitration of the Swiss Chambers of Commerce in force on the date when the Notice of Arbitration is submitted in accordance with these Rules. The number of arbitrators shall be one or three; the seat of the arbitration shall be determined by the arbitrator(s); the arbitral proceedings shall be conducted in English. The applicable law shall be Swiss law.
 
 With respect to all persons and entities, regardless of whether they have obtained or used the site for personal, commercial or other purposes, all disputes, controversies or claims must be brought in the parties’ individual capacity, and not as a plaintiff or class member in any purported class action, collective action or other representative proceeding. This waiver applies to class arbitration, and, unless we agree otherwise, the arbitrator may not consolidate more than one person’s claims. You agree that, by entering into this agreement, you and Zesty Market are each waiving the right to a trial by jury or to participate in a class action, collective action, or other representative proceeding of any kind.
 
 ## Contacting Us
 
 Should you have any question about these Terms, or wish to contact us for any reason whatsoever, please contact one of the administrators of our [Discord group](https://discord.com/invite/hSXTGvAcSs).
-

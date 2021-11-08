@@ -24,7 +24,7 @@ The unique identifier for the NFT owned by the creator and listed/sold on the Ze
 
 **uri**
 
-The link \(also on IPFS\) which contains the details for the ad that were provided by the advertiser, such as the image to display and the CTA link that the ad should link out to.
+The link (also on IPFS) which contains the details for the ad that were provided by the advertiser, such as the image to display and the CTA link that the ad should link out to.
 
 **event**
 
@@ -49,4 +49,3 @@ Helps to identify which SDK is sending the metrics.
 **sdkVersion**
 
 Helps to identify which version of the SDK is being used.
-

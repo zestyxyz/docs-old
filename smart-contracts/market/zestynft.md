@@ -14,7 +14,7 @@ ZestyNFT's URIs, like other URIs on Zesty Market, will be an IPFS hash. The file
 
 ZestyNFT is an Ownable contract. The owner of the ZestyNFT will be set to the deployer initially. The only control the owner has over the ZestyNFT contract is setting the ZestyToken address when ZestyToken is deployed. The zestyTokenAddress will be set to the 0 address initially.
 
-```text
+```
 constructor(address owner_, address zestyTokenAddress_) 
     Ownable(owner_)
     ERC721("Zesty Market NFT", "ZESTYNFT")
@@ -26,7 +26,7 @@ constructor(address owner_, address zestyTokenAddress_)
 
 Returns the creator, time created, amount of locked zesty tokens, and the uri of the token data.
 
-```text
+```
 function getTokenData(uint256 tokenId) 
     public
     view 
@@ -42,7 +42,7 @@ function getTokenData(uint256 tokenId)
 
 Returns the address of ZestyToken. This can be the 0 address if ZestyToken has yet to be deployed. If the address is 0, ZestyNFT will not allow the locking of ZestyTokens and retrieval of ZestyTokens.
 
-```text
+```
 function getZestyTokenAddress() public view returns (address)
 ```
 
@@ -52,7 +52,7 @@ function getZestyTokenAddress() public view returns (address)
 
 Sets the address of ZestyToken. Only the owner of the contract can set the ZestyToken address. After setting the ZestyToken address, the address should not be changed anymore so that there would not be any balance accounting issues with ZestyTokens stored on the contract. The owner of the contract will voluntarily renounce ownership of the contract when ZestyToken address has been set. Renouncing ownership is not done programmatically through the contract.
 
-```text
+```
 function setZestyTokenAddress(address zestyTokenAddress_) public onlyOwner {
 ```
 
@@ -62,7 +62,7 @@ Mints a ZestyNFT. The creator of the NFT can set the URI of the ZestyNFT. The UR
 
 The URI can be modified by the creator of the NFT when the NFT is owned by the creator. The URI cannot be modified once the NFT leaves the creator's address.
 
-```text
+```
 function mint(string memory _uri) public
 ```
 
@@ -70,7 +70,7 @@ function mint(string memory _uri) public
 
 Locks ZestyToken in the contract. Locking of ZestyToken is prohibited if the ZestyToken address has yet to be set. Otherwise, locking ZestyTokens will transfer ZestyTokens from an account or contract to the ZestyNFT contract and increment the balance of ZestyTokens in the ZestyNFT. The nonReentrant modifier is introduced to prevent any form of reentrancy.
 
-```text
+```
 function lockZestyToken(uint256 _tokenId, uint256 _value) public nonReentrant
 ```
 
@@ -78,7 +78,7 @@ function lockZestyToken(uint256 _tokenId, uint256 _value) public nonReentrant
 
 Burns a ZestyNFT and transfers locked ZestyTokens to the caller of the function. The caller may be an approved address or the owner of the ZestyNFT. Users should ensure that they do not approve unsafe addresses to manage their ZestyNFT.
 
-```text
+```
 function burn(uint256 _tokenId) public nonReentrant
 ```
 
@@ -86,7 +86,6 @@ function burn(uint256 _tokenId) public nonReentrant
 
 Allows the creator to modify the URI when the NFT is in the creator's possession
 
-```text
+```
 function setTokenURI(uint256 _tokenId, string memory _uri) public
 ```
-

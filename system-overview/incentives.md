@@ -14,7 +14,7 @@ Users who are shown the ads from the advertisers provide the entire Zesty Market
 
 ### Marketplace Fees
 
-In providing market services such as the aggregation of ad slot liquidity for advertisers, and ad slot demand for creators, Zesty Market collects 100-500 bps \(1%-5%\) on every ad slot purchase. These fees, when generated, are sent to a fee pool, where ZEST stakers can collect proportionally each week.
+In providing market services such as the aggregation of ad slot liquidity for advertisers, and ad slot demand for creators, Zesty Market collects 100-500 bps (1%-5%) on every ad slot purchase. These fees, when generated, are sent to a fee pool, where ZEST stakers can collect proportionally each week.
 
 ### ZEST Staking Rewards
 
@@ -32,7 +32,6 @@ In return for purchasing the ad slots from Zesty Market, advertisers gain new cu
 
 In addition to finding new products and services that they may never have discovered, consumers will benefit by having their privacy protected and not used for surveillance capitalism.
 
-### Validators and Nominators \(Stakers\)
+### Validators and Nominators (Stakers)
 
 To be Validators and Nominators on Zesty Market users will have to stake $ZEST. Users will receive fees from successful auctions and inflation obtained from the network to subsidize and reward validators for work done on the network.
-

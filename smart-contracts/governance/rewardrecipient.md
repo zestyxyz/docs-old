@@ -6,15 +6,15 @@ description: Forked from Synthetix's RewardDistributor
 
 ## Introduction
 
-Abstract contract which allow for the receipt of reward tokens given out by the reward distributor.
+Abstract contract which allow for the receipt of reward tokens given out by the reward distributor. 
 
 ## Specification
 
 ### Constructor
 
-Takes in the owner address \(this should be the zesty DAO address\) and the reward distributor contract address
+Takes in the owner address (this should be the zesty DAO address) and the reward distributor contract address
 
-```text
+```
 constructor(address owner_, address rewardsDistributor_) 
     Ownable(owner_)
 ```
@@ -25,17 +25,17 @@ constructor(address owner_, address rewardsDistributor_)
 
 Returns the reward distributor contract address
 
-```text
+```
 function rewardsDistributor() external view virtual returns (address)
 ```
 
 ### State Changing Functions
 
-#### notifyRewardAmount
+#### notifyRewardAmount 
 
 Virtual empty function that can be used in inherited contracts
 
-```text
+```
 function notifyRewardAmount(uint256 rewards) external virtual
 ```
 
@@ -43,15 +43,14 @@ function notifyRewardAmount(uint256 rewards) external virtual
 
 Allows the owner to set the address of the reward distributor
 
-```text
-function setRewardsDistributor(address rewardsDistributor_) external virtual onlyOwner
+```
+function setRewardsDistributor(address rewardsDistributor_) external virtual onlyOwner 
 ```
 
 #### onlyRewardsDistributor
 
 Modifier to only allow the rewards distributor address to call
 
-```text
+```
 modifier onlyRewardsDistributor()
 ```
-

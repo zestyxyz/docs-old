@@ -12,7 +12,7 @@ Our first product is an alternative to centralized advertising networks that hav
 
 At our current iteration of the product, Zesty enables tokenization of digital ad spaces, whether it's in VR or a section of a livestream into an NFT. The NFT can be rented out to an advertiser. The revenue from the rental would go directly to the creator on-chain. Zesty Market will generate revenues from fees. We plan to offer the product first for the WebXR market, but will be expanding to other platforms.
 
-Zesty will exit to the community, which means that one day we will be owned by our most loyal users, which will include creators and advertisers. So instead of having to purchase shares of Google \(who owns YouTube\) or Amazon \(who owns Twitch\), people will be able to grow their ownership share in Zesty just by using it. With a financial and attention ecosystem that would be favorable for creators, Zesty Market will pave the way for the future metaverse \(whatever this might be\), where everyone has a stake.
+Zesty will exit to the community, which means that one day we will be owned by our most loyal users, which will include creators and advertisers. So instead of having to purchase shares of Google (who owns YouTube) or Amazon (who owns Twitch), people will be able to grow their ownership share in Zesty just by using it. With a financial and attention ecosystem that would be favorable for creators, Zesty Market will pave the way for the future metaverse (whatever this might be), where everyone has a stake.
 
 ## Scarcity and Cash Flow
 
@@ -28,26 +28,26 @@ We foresee a future where it might be possible to sell an online business throug
 
 The metaverse, in our opinion, is wherever people spend their time and resources in the virtual world. The time and resources may be used to form friendships, build ideas, craft virtual goods, increase social clout, and exercise their influence. It is already happening today on platforms like Discord and Twitter. We see these platforms already as the "metaverse".
 
-WebXR is a device API for AR and VR hardware to be able to interact with immersive Web experiences. With the growth of VR headsets and openly distributed WebXR experiences on the Web and platforms like [SideQuest](https://sidequestvr.com/), there is a growing need for an open monetization mechanism. With the development of a WebGPU API, the web will become a compelling medium to build spatial experiences on and become a competitive option to native experiences.
+WebXR is a device API for AR and VR hardware to be able to interact with immersive Web experiences. With the growth of VR headsets and openly distributed WebXR experiences on the Web and platforms like [SideQuest](https://sidequestvr.com), there is a growing need for an open monetization mechanism. With the development of a WebGPU API, the web will become a compelling medium to build spatial experiences on and become a competitive option to native experiences.
 
-Zesty Market recognizes that the WebXR space is presently small despite future potential. As such the project will look into other verticals in the metaverse economy, like streaming \(Twitch, YouTube Live, etc.\).
+Zesty Market recognizes that the WebXR space is presently small despite future potential. As such the project will look into other verticals in the metaverse economy, like streaming (Twitch, YouTube Live, etc.).
 
-## How it Works \(WIP\)
+## How it Works (WIP)
 
 In online advertising, there are three key stakeholders: Advertisers, Publishers/Creators, and Consumers. Advertisers buy advertising slots from publishers to leverage their reach in order to get information out to consumers. This structure is the basis of the attention economy that the internet is built upon. In the Web 2.0 model, the relationship between the key stakeholders is mediated by a centralized third party who mediates the flow of money as well as the flow of attention. Zesty Market proposes a decentralized structure for how this could be implemented.
 
 The sale and fulfillment of the advertising slot are done in two parts:
 
 1. A Dutch Auction for price discovery of the advertising slot
-2. A Hash Timelock Contract augmented with Publicly Verifiable Secret Sharing \(PVSS\) for decentralized validation of the advertising slot. 
+2. A Hash Timelock Contract augmented with Publicly Verifiable Secret Sharing (PVSS) for decentralized validation of the advertising slot. 
 
-By treating the serving of media on an advertising slot as a delivery vs payment \(DvP\) problem, the system is able to facilitate value transfer in a decentralized way. Profits from the auction are redistributed to stakers \(validators and nominators\). Fraud is disincentivized through cryptoeconomic mechanisms.
+By treating the serving of media on an advertising slot as a delivery vs payment (DvP) problem, the system is able to facilitate value transfer in a decentralized way. Profits from the auction are redistributed to stakers (validators and nominators). Fraud is disincentivized through cryptoeconomic mechanisms.
 
 ## Dutch Auction of NFT Advertising Timeslots
 
-Zesty Market uses a Dutch Auction for price discovery of advertising timeslots. Publishers/Creators on Zesty Market would need to first create advertising slots by minting non-fungible tokens \(NFT\) that would represent timeshares of an advertising space that the publisher owns. Once the advertising slots have been minted, the publisher can create a Dutch auction for the NFT for bidding by advertisers. As the NFT represents a timeshare, the value of the NFT would decrease and approach zero as it reaches the end of the timeslot. The value of the NFT on the Dutch auction is represented by a linearly decreasing function as follows:
+Zesty Market uses a Dutch Auction for price discovery of advertising timeslots. Publishers/Creators on Zesty Market would need to first create advertising slots by minting non-fungible tokens (NFT) that would represent timeshares of an advertising space that the publisher owns. Once the advertising slots have been minted, the publisher can create a Dutch auction for the NFT for bidding by advertisers. As the NFT represents a timeshare, the value of the NFT would decrease and approach zero as it reaches the end of the timeslot. The value of the NFT on the Dutch auction is represented by a linearly decreasing function as follows:
 
-$$V(T_{i}) = V(T_{0}) - (T_{i} - T_{0}) \times \frac{V(T_{0})}{T_{0} - T_{n}}$$
+$$V(T_{i}) = V(T_{0}) - (T_{i} - T_{0}) \times \frac{V(T_{0})}{T_{n} - T_{0}}$$
 
 **Definitions**
 
@@ -67,7 +67,7 @@ An expiration time for the Dutch auction can be set to an appropriate time order
 
 ## Hash Timelock Contract with Publicly Verifiable Secret Sharing for Advertising Services
 
-To mediate the successful completion of advertising service. It is possible to model the system as a delivery vs payment \(DvP\) problem. DvP is formerly a term used in security settlements to guarantee that the transfer of payment is made only when the transfer of a security is made. In the case of advertising, it is analogous to the payment for advertising slots when the advertising service concludes. We will first discuss the case of securities settlements, this can be implemented using a Hash Timelock Contract.
+To mediate the successful completion of advertising service. It is possible to model the system as a delivery vs payment (DvP) problem. DvP is formerly a term used in security settlements to guarantee that the transfer of payment is made only when the transfer of a security is made. In the case of advertising, it is analogous to the payment for advertising slots when the advertising service concludes. We will first discuss the case of securities settlements, this can be implemented using a Hash Timelock Contract.
 
 ### **Hash Timelocks explained**
 
@@ -93,11 +93,11 @@ Upon successful advertisement at a random timeslot, a secret share will be revea
 
 To decentralize the secret-sharing process. The protocol will introduce multiple operator/validator nodes which will be in charge of the validation process. A random subset of validators will be elected for each hash timelock contract.
 
-\(TO DESCRIBE FURTHER\)
+(TO DESCRIBE FURTHER)
 
 **Protocol Design**
 
-![Sequence Diagram of the Auction Hashtime Lock Protocol](.gitbook/assets/auctionhtlc.png)
+![Sequence Diagram of the Auction Hashtime Lock Protocol](.gitbook/assets/AuctionHTLC.png)
 
 ## Operator Node Implementation
 
@@ -106,4 +106,3 @@ To decentralize the secret-sharing process. The protocol will introduce multiple
 ### Operator Mode
 
 Selenium + Computer Vision based verification system
-

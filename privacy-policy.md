@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Zesty Market, Inc. and its affiliates \(hereinafter, “Zesty Market”, "**the Company**", "**we**", "**us**" or "**our**"\) are committed to protecting and respecting your privacy. In addition, we recognize that persons who use Zesty Market value their privacy. This Privacy Policy together with our Terms of Service governs our collection, processing and use of your Personal Information. By accessing Zesty Market, you are consenting to the information collection and use practices described in this Privacy Policy.
+Zesty Market, Inc. and its affiliates (hereinafter, “Zesty Market”, "**the Company**", "**we**", "**us**" or "**our**") are committed to protecting and respecting your privacy. In addition, we recognize that persons who use Zesty Market value their privacy. This Privacy Policy together with our Terms of Service governs our collection, processing and use of your Personal Information. By accessing Zesty Market, you are consenting to the information collection and use practices described in this Privacy Policy.
 
-This Privacy Policy applies to the operations of Zesty Market in the European Economic Area \(EEA\). It gives you rights by operation of the EU GDPR. If you live outside the EEA, Zesty Market will undertake best efforts to give you a similar degree of control over your privacy.
+This Privacy Policy applies to the operations of Zesty Market in the European Economic Area (EEA). It gives you rights by operation of the EU GDPR. If you live outside the EEA, Zesty Market will undertake best efforts to give you a similar degree of control over your privacy.
 
 ## Purpose of Privacy Policy
 
@@ -37,7 +37,7 @@ Personal Information is collected in order to:
 7. Conduct surveys and get feedback from you;
 8. Establish and maintain a responsible commercial relationship with you;
 9. Provide you with news and other matters of general interest to you as Zesty Market customer;
-10. Meet Zesty Market’s legal and regulatory requirements \(eg, information required to verify your identity\).
+10. Meet Zesty Market’s legal and regulatory requirements (eg, information required to verify your identity).
 
 ## Security, Protection and Use of Personal Information
 
@@ -90,4 +90,3 @@ Our policies, content, information, promotions, disclosures, disclaimers and fea
 ## Contact Us
 
 If you have any questions, comments, or concerns regarding our Privacy Policy and/or practices, please contact one of the administrators of our [Discord group](https://discord.com/invite/hSXTGvAcSs).
-

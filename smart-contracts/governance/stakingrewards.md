@@ -12,9 +12,9 @@ Allows participants in the Zesty Market to stake their ZESTY tokens for more ZES
 
 ### Constructor
 
-Specify the owner of the StakingReward contract \(this should be Zesty DAO\), the reward distributor contract address, the address of the rewards and staking token.
+Specify the owner of the StakingReward contract (this should be Zesty DAO), the reward distributor contract address, the address of the rewards and staking token.
 
-```text
+```
 constructor(
     address owner_,
     address rewardsDistributor_,
@@ -29,7 +29,7 @@ constructor(
 
 Returns the total amount of staked tokens in the contract
 
-```text
+```
 function totalSupply() external view override returns (uint256)
 ```
 
@@ -37,7 +37,7 @@ function totalSupply() external view override returns (uint256)
 
 Returns the balance of a given account which had staked tokens
 
-```text
+```
 function balanceOf(address account) external view override returns (uint256)
 ```
 
@@ -45,7 +45,7 @@ function balanceOf(address account) external view override returns (uint256)
 
 Returns the current block.timestamp or the last period where rewards token were given to the contract.
 
-```text
+```
 function lastTimeRewardApplicable() public view override returns (uint256)
 ```
 
@@ -53,7 +53,7 @@ function lastTimeRewardApplicable() public view override returns (uint256)
 
 Returns the reward per staked token given the rewardRate.
 
-```text
+```
 function rewardPerToken() public view override returns (uint256)
 ```
 
@@ -61,7 +61,7 @@ function rewardPerToken() public view override returns (uint256)
 
 Returns the earnings of an account
 
-```text
+```
 function earned(address account) public view override returns (uint256)
 ```
 
@@ -69,15 +69,15 @@ function earned(address account) public view override returns (uint256)
 
 Returns the reward token address
 
-```text
-function rewardsToken() external view override returns (address)
+```
+function rewardsToken() external view override returns (address) 
 ```
 
 #### stakingToken
 
 Returns the staking token address
 
-```text
+```
 function stakingToken() external view override returns (address)
 ```
 
@@ -85,7 +85,7 @@ function stakingToken() external view override returns (address)
 
 Returns the reward distributor contract address
 
-```text
+```
 function rewardsDistributor() external view override(IStakingRewards, RewardsRecipient) returns (address)
 ```
 
@@ -95,7 +95,7 @@ function rewardsDistributor() external view override(IStakingRewards, RewardsRec
 
 Stake the staking token into the contract
 
-```text
+```
 function stake(uint256 amount) external override nonReentrant updateReward(msg.sender)
 ```
 
@@ -103,23 +103,23 @@ function stake(uint256 amount) external override nonReentrant updateReward(msg.s
 
 Withdraw deposited staking token from the contract
 
-```text
-function withdraw(uint256 amount) public override nonReentrant updateReward(msg.sender)
+```
+function withdraw(uint256 amount) public override nonReentrant updateReward(msg.sender) 
 ```
 
 #### getReward
 
 Get the rewards for staking done
 
-```text
-function getReward() public override nonReentrant updateReward(msg.sender)
+```
+function getReward() public override nonReentrant updateReward(msg.sender) 
 ```
 
 #### exit
 
 Calls withdraw and getReward
 
-```text
+```
 function exit() external override
 ```
 
@@ -127,15 +127,15 @@ function exit() external override
 
 Updates the contract state variables `rewardRate`,`balance` of the StakingRewards contract, `lastUpdateTime` and `periodFinish` after the RewardDistributor has given tokens to the contract.
 
-```text
-function notifyRewardAmount(uint256 reward) external override onlyRewardsDistributor updateReward(address(0))
+```
+function notifyRewardAmount(uint256 reward) external override onlyRewardsDistributor updateReward(address(0)) 
 ```
 
 #### updatePeriodFinish
 
 Allows ZestyDAO to change the periodFinish variable which would end rewards emissions earlier or later. Note that changing this would modify the `lastTimeRewardApplicable` function and the `rewardPerToken` function.
 
-```text
+```
 function updatePeriodFinish(uint timestamp) external onlyOwner updateReward(address(0))
 ```
 
@@ -143,15 +143,15 @@ function updatePeriodFinish(uint timestamp) external onlyOwner updateReward(addr
 
 Allows ZestyDAO to recover tokens that are not staking tokens from the contract.
 
-```text
-function recoverERC20(address tokenAddress, uint256 tokenAmount) external onlyOwner
+```
+function recoverERC20(address tokenAddress, uint256 tokenAmount) external onlyOwner 
 ```
 
 #### setRewardDuration
 
 Sets the reward duration. Note that changing the reward duration would modify the `rewardRate` when `notifyRewardAmount` is called by RewardsDistributor.
 
-```text
+```
 function setRewardsDuration(uint256 _rewardsDuration) external onlyOwner
 ```
 
@@ -161,7 +161,8 @@ function setRewardsDuration(uint256 _rewardsDuration) external onlyOwner
 
 Updates the reward tokens earned by an account. Updates the `rewardPerTokenStored` variable and the `lastUpdateTime` variable.
 
-```text
+```
  modifier updateReward(address account)
 ```
 
+ 

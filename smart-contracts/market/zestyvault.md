@@ -10,7 +10,7 @@ Zesty Vault is an abstract contract which specifies how Zesty NFTs would be depo
 
 Specify the zestyNFT address to be used
 
-```text
+```
 constructor(address zestyNFTAddress_)
 ```
 
@@ -20,7 +20,7 @@ constructor(address zestyNFTAddress_)
 
 Returns the zesty NFT address
 
-```text
+```
 function getZestyNFTAddress() public virtual view returns (address) {
 ```
 
@@ -28,7 +28,7 @@ function getZestyNFTAddress() public virtual view returns (address) {
 
 Returns the depositor for a given token id
 
-```text
+```
 function getDepositor(uint256 _tokenId) public virtual view returns (address)
 ```
 
@@ -36,7 +36,7 @@ function getDepositor(uint256 _tokenId) public virtual view returns (address)
 
 Returns a bool whether the `msg.sender` is the depositor for a given token id
 
-```text
+```
 function isDepositor(uint256 _tokenId) public virtual view returns (bool)
 ```
 
@@ -44,7 +44,7 @@ function isDepositor(uint256 _tokenId) public virtual view returns (bool)
 
 Returns the operator address for a given depositor address. Note that since the operator is an address to address mapping. The operator does not need to operate only on depositors. Any address would suffice.
 
-```text
+```
 function getOperator(address _depositor) public virtual view returns (address)
 ```
 
@@ -52,7 +52,7 @@ function getOperator(address _depositor) public virtual view returns (address)
 
 Returns a bool whether a given address is an operator for a depositor
 
-```text
+```
 function isOperator(address _depositor, address _operator) public virtual view returns (bool)
 ```
 
@@ -60,7 +60,7 @@ function isOperator(address _depositor, address _operator) public virtual view r
 
 ERC721 function to allow receipt of ERC721
 
-```text
+```
 function onERC721Received(address, address, uint256, bytes memory) public virtual override returns (bytes4)
 ```
 
@@ -70,7 +70,7 @@ function onERC721Received(address, address, uint256, bytes memory) public virtua
 
 Authorizes an operator for `msg.sender`
 
-```text
+```
 function authorizeOperator(address _operator) public virtual
 ```
 
@@ -78,7 +78,7 @@ function authorizeOperator(address _operator) public virtual
 
 Revokes an operator for `msg.sender`
 
-```text
+```
 function revokeOperator(address _operator) public virtual
 ```
 
@@ -86,7 +86,7 @@ function revokeOperator(address _operator) public virtual
 
 An internal function that is to be used by inherited contracts that allow for the deposit of NFTs.
 
-```text
+```
 function _depositZestyNFT(uint256 _tokenId) internal virtual
 ```
 
@@ -94,7 +94,7 @@ function _depositZestyNFT(uint256 _tokenId) internal virtual
 
 An internal function that is to be used by inherited contracts that allow for the withdrawal of NFTs.
 
-```text
+```
 function _withdrawZestyNFT(uint256 _tokenId) internal virtual onlyDepositor(_tokenId)
 ```
 
@@ -104,7 +104,7 @@ function _withdrawZestyNFT(uint256 _tokenId) internal virtual onlyDepositor(_tok
 
 Allow only depositors
 
-```text
+```
 modifier onlyDepositor(uint256 _tokenId)
 ```
 
@@ -112,7 +112,7 @@ modifier onlyDepositor(uint256 _tokenId)
 
 Allow only operators
 
-```text
+```
  modifier onlyOperator(uint256 _tokenId)
 ```
 
@@ -120,7 +120,6 @@ Allow only operators
 
 Allow only depositor or operator
 
-```text
+```
 modifier onlyDepositorOrOperator(uint256 _tokenId)
 ```
-
