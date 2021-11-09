@@ -139,7 +139,7 @@ scene.add(zestyBanner);
 
 **Step 1**
 
-Download the [zesty-unity-sdk package](https://github.com/zestymarket/zesty-sdk/raw/main/unity/zesty-unity-sdk.unitypackage) from the Zesty SDK GitHub repo.
+Download the [zesty-unity-sdk package](https://ipfs.io/ipns/lib.zesty.market/zesty-unity-sdk.unitypackage).
 
 **Step 2**
 
