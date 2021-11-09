@@ -6,96 +6,166 @@ description: These are the steps to integrate Zesty to WebXR
 
 ## A-Frame
 
-#### Step 1 a)
+#### Step 1a
 
-If you want to import the  tag, copy and paste this into the \<head>:`<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-aframe-sdk.js"></script>`
+If you want to import the `<script>` tag, copy and paste this into the `<head>`:
 
-#### Step 1 b)
+```
+<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-aframe-sdk.js"></script>
+```
 
-If you are using it in an NPM project, install it like so:\
-`npm install '@zestymarket/aframe-sdk'`
+#### Step 1b
 
-Once installed, import the ZestyAd component:\
-`import * as Zesty from '@zestymarket/aframe-sdk';`
+If you are using it in an NPM project, install it like so:
 
-#### Step 2)
+```
+npm install '@zestymarket/aframe-sdk'
+```
 
-In the \<a-scene>, copy and paste:\
-`<a-entity visible="true" zesty-ad="adSpace: 0; creator: 0x0000000000000000000000000000000000000000; adFormat: tall" position="0 2 0"></a-entity>`
+Once installed, import the ZestyBanner component:
+
+```
+import * as Zesty from '@zestymarket/aframe-sdk';
+```
+
+#### Step 2
+
+In the `<a-scene>`, copy and paste:
+
+```
+<a-entity visible="true" zesty-banner="space: 0; creator: 0x0000000000000000000000000000000000000000; format: tall; style: standard" position="0 2 0"></a-entity>
+```
 
 ## babylon.js
 
-#### Step 1 a)
+#### Step 1a
 
-If you want to import the  tag, copy and paste this into the \<head>:\
-`<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-babylonjs-sdk.js"></script>`
+If you want to import the `<script>` tag, copy and paste this into the `<head>`:
 
-#### Step 1 b)
+```
+<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-babylonjs-sdk.js"></script>
+```
 
-If you are using it in an NPM project, install it like so:\
-`npm install '@zestymarket/babylonjs-sdk'`
+#### Step 1b
 
-Once installed, import the ZestyAd component:\
-`import ZestyAd from '@zestymarket/babylonjs-sdk';`
+If you are using it in an NPM project, install it like so:
 
-#### Step 2)
+```
+npm install '@zestymarket/babylonjs-sdk'
+```
 
-Make sure you have a reference to your scene and WebXRHelper (if applicable), then copy and paste:\
-`const zestyAd = new ZestyAd("0", "0x0000000000000000000000000000000000000000", "tall", 3, scene, xrHelper);`
+Once installed, import the ZestyBanner component:
+
+```
+import ZestyBanner from '@zestymarket/babylonjs-sdk';
+```
+
+#### Step 2
+
+Make sure you have a reference to your scene and WebXRHelper (if applicable), then copy and paste:
+
+```
+const zestyBanner = new ZestyBanner("0", "0x0000000000000000000000000000000000000000", "tall", "standard", 3, scene, xrHelper);
+```
 
 Substitute variable names as needed. The last parameter for the WebXRHelper is optional.
 
 ## react-three-fiber
 
-#### Step 1 a)
+#### Step 1a
 
-If you want to import the  tag, copy and paste this into the \<head>:\
-`<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-r3f-sdk.js"></script>`
+If you want to import the `<script>` tag, copy and paste this into the `<head>`:
 
-#### Step 1 b)
+```
+<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-r3f-sdk.js"></script>
+```
 
-If you are using it in an NPM project, install it like so:\
-`npm install '@zestymarket/r3f-sdk'`
+#### Step 1b
 
-Once installed, import the ZestyAd component:\
-`import ZestyAd from '@zestymarket/r3f-sdk';`
+If you are using it in an NPM project, install it like so:
 
-#### Step 2)
+```
+npm install '@zestymarket/r3f-sdk'
+```
 
-In the \<a-scene>, copy and paste:\
-`<ZestyAd adSpace={'0'} creator={'0x0000000000000000000000000000000000000000'} adFormat={'tall'} position={[0, 2, 0]} />`
+Once installed, import the ZestyBanner component:
+
+```
+import ZestyBanner from '@zestymarket/r3f-sdk';
+```
+
+#### Step 2
+
+In your VR Canvas component, copy and paste:
+
+```
+<ZestyBanner space={'0'} creator={'0x0000000000000000000000000000000000000000'} format={'tall'} style={'standard'} position={[0, 2, 0]} />
+```
 
 ## three.js
 
-#### Step 1 a)
+#### Step 1a
 
-If you want to import the  tag, copy and paste this into the \<head>:\
-`<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-threejs-sdk.js"></script>`
+If you want to import the `<script>` tag, copy and paste this into the `<head>`:
 
-#### Step 1 b)
+```
+<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-threejs-sdk.js"></script>
+```
 
-If you are using it in an NPM project, install it like so:\
-`npm install '@zestymarket/threejs-sdk'`
+#### Step 1b
 
-Once installed, import the ZestyAd component:\
-`import ZestyAd from '@zestymarket/threejs-sdk';`
+If you are using it in an NPM project, install it like so:
 
-#### Step 2)
+```
+npm install '@zestymarket/threejs-sdk'
+```
 
-In the your scene setup, copy and paste:\
-`const zestyAd = new ZestyAd("0", "0x0000000000000000000000000000000000000000", "tall", 3);`\
-`scene.add(zestyAd);`
+Once installed, import the ZestyBanner component:
+
+```
+import ZestyBanner from '@zestymarket/threejs-sdk';
+```
+
+#### Step 2
+
+In the your scene setup, copy and paste:
+
+```
+const zestyBanner = new ZestyBanner("0", "0x0000000000000000000000000000000000000000", "tall", "standard", 3);
+scene.add(zestyBanner);
+```
+
+## Unity
+
+**Step 1**
+
+Download the [zesty-unity-sdk package](https://github.com/zestymarket/zesty-sdk/raw/main/unity/zesty-unity-sdk.unitypackage) from the Zesty SDK GitHub repo.
+
+**Step 2**
+
+Open your Unity project and import the package through `Assets > Import Package > Custom Package`.
+
+**Step 3**
+
+Add the ZestySDK prefab to your hierarchy.
+
+**Step 4**
+
+Add the Banner prefab and configure the space ID, creator ID, format, and style based on your space details from the Zesty marketplace.
 
 ## Wonderland Engine
 
-#### Step 1 a)
+#### Step 1a
 
-To just use the bundled file, download it by right-clicking this link and saving it into your project folder: https://ipfs.io/ipns/lib.zesty.market/zesty-wonderland-sdk.js
+To just use the bundled file, download it by right-clicking this link and saving it into your project folder: [https://ipfs.io/ipns/lib.zesty.market/zesty-wonderland-sdk.js](https://ipfs.io/ipns/lib.zesty.market/zesty-wonderland-sdk.js)
 
-#### Step 1 b)
+#### Step 1b
 
-If you are using NPM in your Wonderland project, install it like so:\
-`npm install '@zestymarket/wonderland-sdk'`
+If you are using NPM in your Wonderland project, install it like so:
+
+```
+npm install '@zestymarket/wonderland-sdk'
+```
 
 #### Step 2
 
@@ -107,13 +177,16 @@ Create a new mesh, set its type to PrimitivePlane, and create a new material for
 
 #### Step 4
 
-Add the zesty-ad component to your mesh's object and fill in the following fields as such:
+Add the zesty-banner component to your mesh's object and fill in the following fields as such:
 
 **creator**\
 `0x0000000000000000000000000000000000000000`
 
-**adSpace**\
+**space**\
 `0`
 
-**adFormat**\
+**format**\
 `tall`
+
+**style**\
+`standard`

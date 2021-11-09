@@ -6,20 +6,29 @@ description: How to add your Space NFT to your livestream via OBS Studio or Stre
 
 ## Web
 
-#### Step 1 a)
+#### Step 1a
 
-1a) If you want to import the  tag, copy and paste this into the \<head>:\
-`<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-web-sdk.js"></script>`
+If you want to import the `<script>` tag, copy and paste this into the `<head>`:
 
-#### Step 1 b)
+```
+<script src="https://ipfs.io/ipns/lib.zesty.market/zesty-web-sdk.js"></script>
+```
 
-1b) If you are using it in an NPM project, install it like so:\
-`npm install '@zestymarket/web-sdk'`
+#### Step 1b
 
-#### Step 2)
+If you are using it in an NPM project, install it like so:
 
-2\) In your page's \<body>, copy and paste:\
-`<zesty-web adspace="0" creator="0x0000000000000000000000000000000000000000" width="100px"></zesty-web>`
+```
+npm install '@zestymarket/web-sdk'
+```
+
+#### Step 2
+
+In your page's `<body>`, copy and paste:
+
+```
+<zesty-web space="0" creator="0x0000000000000000000000000000000000000000" width="100px"></zesty-web>
+```
 
 ## OBS (for Livestreaming)
 
