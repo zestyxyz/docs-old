@@ -55,3 +55,4 @@
 ## Extra
 
 * [Dice](extra/dice.md)
+* [FAQ](extra/faq.md)
