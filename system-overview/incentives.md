@@ -1,3 +1,7 @@
+---
+description: Zesty Market Incentives
+---
+
 # Incentives
 
 At the core of Zesty Market is a mechanism for profit-sharing with its stakeholders. This mechanism ensures that those who hold and stake the Zesty Governance token are rewarded for helping in the network's validation of ad display.

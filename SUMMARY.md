@@ -7,15 +7,10 @@
 
 * [MetaMask](guides/metamask.md)
 * [For Renters](guides/advertisers.md)
-* [Creators](guides/creators.md)
-
-## Guide
-
-* [Pre-Requisite](guide/pre-requisite.md)
-* [For Renters](guide/for-renters.md)
-* [For Creators](guide/for-creators/README.md)
-  * [WebXR Integration](guide/for-creators/webxr-integration.md)
-  * [Web & Twitch Integration (OBS)](guide/for-creators/web-and-twitch-integration-obs.md)
+* [For Creators](guides/for-creators/README.md)
+  * [WebXR Integration](guides/for-creators/webxr-integration.md)
+  * [Web & Twitch Integration (OBS)](guides/for-creators/web-and-twitch-integration-obs.md)
+  * [Collect Funds](guides/for-creators/collect-funds.md)
 
 ## System Overview
 

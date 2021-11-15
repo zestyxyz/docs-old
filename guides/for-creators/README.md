@@ -1,7 +1,7 @@
 ---
 description: >-
-  Step-by-step guide to mint your Space NFT and start monetize your on your
-  content spaces.
+  A step-by-step guide to mint your Space as an NFT and start monetization on
+  your content spaces.
 ---
 
 # For Creators
@@ -9,12 +9,12 @@ description: >-
 ## Summary
 
 1. Creating a Space
-2. Integrate
-   1. VR
-   2. Twitch
-   3. Website
-3. Create auction
+2. Creating an Auction
+3. Integrate
+   1. WebXR Integration
+   2. Web & Twitch Integration (OBS)
 4. Getting paid
+   1. Collect Funds
 
 ## 1. Creating a Space
 
@@ -98,7 +98,7 @@ And you're done!
 
 ## 3. Integrate
 
-Please refer the pages below for the integration set-up guide.
+Please refer to the pages below for the integration set-up guide.
 
 {% content-ref url="webxr-integration.md" %}
 [webxr-integration.md](webxr-integration.md)
@@ -111,3 +111,9 @@ Please refer the pages below for the integration set-up guide.
 ## 4. Getting paid
 
 After the slot has been purchased and there is sufficient proof that you had shown for the agreed period of time, you'll be able to withdraw the amount used to purchase your Zesty NFT.
+
+Please refer to the page below for the step-by-step guide on how to cooolect your funds once you've finished the advertisement.
+
+{% content-ref url="collect-funds.md" %}
+[collect-funds.md](collect-funds.md)
+{% endcontent-ref %}

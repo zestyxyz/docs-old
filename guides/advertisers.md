@@ -4,15 +4,15 @@ description: How to start renting on Zesty Market
 
 # For Renters
 
-This guide will show you how to start renting on Zesty Market step-by-step. Before proceeding, make sure you have MetaMask installed and set to the correct network (currently Polygon). You'll also need USDC to start renting Spaces. See our pre-requisite guides [here](metamask.md).
+This guide will show you how to start renting on Zesty Market step-by-step. Before proceeding, make sure you have MetaMask installed and set to the correct network ( **Polygon**). You'll also need USDC to start renting Spaces. See our MetaMask guide [here](metamask.md).
 
 ## Summary
 
-1. Create campaign
-2. Bid Timeslot
+1. Create a Campaign
+2. Bid on Timeslots
 3. Refunds
 
-## 1. Create campaign
+## 1. Create a campaign
 
 Go to [https://zesty.market](https://zesty.market) and click on **Launch App.**
 
@@ -66,7 +66,7 @@ You'll received a MetaMask pop-up notification when the transaction is done. The
 
 Now that you have your Campaign set-up, you're ready to start bidding on the timeslot of the creator of your choice.
 
-## 2. Bid timeslot
+## 2. Bid on timeslot
 
 First you'll need to go to the **Market** page. On the page, you'll be able to see all the spaces that have been created by the creators, ready for you to bid on. **Choose** the space you desire, for the purpose of this guide, we'll choose Zesty Ad Demo space.
 

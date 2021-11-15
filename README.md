@@ -18,4 +18,4 @@ Learn how to buy banner spaces [here](guides/advertisers.md).
 
 ## Creators
 
-Get started by clicking [here](guides/creators.md).
+Get started by clicking [here](broken-reference).

@@ -10,4 +10,4 @@ V2 will eventually include validation of the advertising slots, this will be don
 
 Both market contracts are designed to accept ERC20 tokens. The key ERC20 token Zesty Market will be using is USDC. More ERC20 tokens will be supported depending on demand.
 
-The contracts consist of two sections: **Auction** and and **Contract** (referring to the fulfillment of the contract). For V1 and V2 the **Auction** section is Dutch Auction. V1 and V2 differs mainly in the **Contract** section.
+The contracts consist of two sections: **Auction** and a **Contract** (referring to the fulfillment of the contract). For V1 and V2 the **Auction** section is Dutch Auction. V1 and V2 differ mainly in the **Contract** section.
