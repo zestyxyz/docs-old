@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [FAQ](faq.md)
 * [Litepaper](litepaper.md)
 
 ## Guides
@@ -50,4 +51,3 @@
 ## Extra
 
 * [Dice](extra/dice.md)
-* [FAQ](extra/faq.md)
