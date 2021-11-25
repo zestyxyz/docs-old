@@ -30,6 +30,12 @@ In your page's `<body>`, copy and paste:
 <zesty-web space="0" creator="0x0000000000000000000000000000000000000000" width="100px"></zesty-web>
 ```
 
+If you wish to opt into enabling a beacon on your space, copy and paste:
+
+```
+<zesty-web space="0" creator="0x0000000000000000000000000000000000000000" width="100px" beacon="true"></zesty-web>
+```
+
 ## OBS (for Livestreaming)
 
 For livestreaming on platforms like Twitch, you can use below guide to add Zesty space into your stream scenes.

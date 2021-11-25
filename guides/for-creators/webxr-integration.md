@@ -36,6 +36,12 @@ In the `<a-scene>`, copy and paste:
 <a-entity visible="true" zesty-banner="space: 0; creator: 0x0000000000000000000000000000000000000000; format: tall; style: standard" position="0 2 0"></a-entity>
 ```
 
+To opt into enabling a beacon for your space, copy and paste:
+
+```
+<a-entity visible="true" zesty-banner="space: 0; creator: 0x0000000000000000000000000000000000000000; format: tall; style: standard; beacon: true" position="0 2 0"></a-entity>
+```
+
 ## babylon.js
 
 #### Step 1a
@@ -69,6 +75,12 @@ const zestyBanner = new ZestyBanner("0", "0x000000000000000000000000000000000000
 ```
 
 Substitute variable names as needed. The last parameter for the WebXRHelper is optional.
+
+To opt into enabling a beacon on your space, copy and paste:
+
+```
+const zestyBanner = new ZestyBanner("0", "0x0000000000000000000000000000000000000000", "tall", "standard", 3, scene, xrHelper, true);
+```
 
 ## Cryptovoxels
 
@@ -110,6 +122,12 @@ At the end of the script, copy this line to call the loadBanner function (modify
 loadBanner('0', '0x0000000000000000000000000000000000000000', 'polygon', 'tall', 'standard');
 ```
 
+To opt into enabling a beacon on your space, copy and paste:
+
+```
+loadBanner('0', '0x0000000000000000000000000000000000000000', 'polygon', 'tall', 'standard', true);
+```
+
 ## react-three-fiber
 
 #### Step 1a
@@ -140,6 +158,12 @@ In your VR Canvas component, copy and paste:
 
 ```
 <ZestyBanner space={'0'} creator={'0x0000000000000000000000000000000000000000'} format={'tall'} style={'standard'} position={[0, 2, 0]} />
+```
+
+To opt into enabling a beacon on your space, copy and paste:
+
+```
+<ZestyBanner space={'0'} creator={'0x0000000000000000000000000000000000000000'} format={'tall'} style={'standard'} beacon={true} position={[0, 2, 0]} />
 ```
 
 ## three.js
@@ -175,6 +199,13 @@ const zestyBanner = new ZestyBanner("0", "0x000000000000000000000000000000000000
 scene.add(zestyBanner);
 ```
 
+To opt into enabling a beacon on your space, copy and paste:
+
+```
+const zestyBanner = new ZestyBanner("0", "0x0000000000000000000000000000000000000000", "tall", "standard", 3, null, true);
+scene.add(zestyBanner);
+```
+
 ## Unity
 
 **Step 1**
@@ -192,6 +223,8 @@ Add the ZestySDK prefab to your hierarchy.
 **Step 4**
 
 Add the Banner prefab and configure the space ID, creator ID, format, and style based on your space details from the Zesty marketplace.
+
+To opt into enabling a beacon on your space, simply check the "Enable Beacon" box on the Banner component.
 
 ## Wonderland Engine
 
@@ -230,3 +263,5 @@ Add the zesty-banner component to your mesh's object and fill in the following f
 
 **style**\
 `standard`
+
+To opt into enabling a beacon on your space, simply check the "beacon" box on the zesty-banner component.
