@@ -4,18 +4,16 @@
 
 ## TL;DR
 
-Zesty empowers creators with web3-native monetization tools.
+Zesty empowers entrepreneurs and builders in the metaverse with business tools.
 
-Our first product is a marketplace for the buying and selling of banner spaces in Twitch and WebXR.
+Our first product is an open marketplace for the buying and selling of banner spaces in WebXR and virtual worlds, like Cryptovoxels.
 
-Banner spaces are represented as NFTs.&#x20;
+Banner spaces are represented as NFTs - ownership of the NFT gives the renter the right to modify the space to show their own banners.
 
-Ownership of the NFT gives the buyer the right to modify the visual characteristics of the banner space.
+## Rent Banner Spaces
 
-## Buyers
+Learn how to rent banner spaces to promote your business or brand [here](guides/advertisers.md).
 
-Learn how to buy banner spaces [here](guides/advertisers.md).
+## Land Owners and Builders
 
-## Creators
-
-Get started by clicking [here](broken-reference).
+Start earning yield on your land in the metaverse by clicking [here](broken-reference).
