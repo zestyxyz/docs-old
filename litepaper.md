@@ -1,8 +1,22 @@
 ---
-description: Version 0.2 - updated May 2021 (v0.1 in Jan 2021)
+description: Version 0.3
 ---
 
 # Litepaper
+
+## Changelog
+
+* Version 0.4 (To be completed)
+  * Add "Beacons" into "System Design"
+* Version 0.3 (11 Dec 2021)
+  * Added "Changelog"
+  * Update Abstract to reflect changes in product
+  * Update "Metaverse" to "Building the Open Metaverse"
+  * Refactor "How it Works" into "System Design"
+* Version 0.2 (May 2021)
+  * Refine wording
+* Version 0.1 (Jan 2021)
+  * Initial ideation
 
 ## Abstract
 
@@ -10,9 +24,19 @@ Zesty Market is a monetization platform for Internet communities, owned by Inter
 
 Our first product is an alternative to centralized advertising networks that have come to extract an outsized amount of value from creators. Twitch takes 50% of all revenue from subscriptions, and YouTube only shares 30-40% of the ad revenue with its video creators. Sometimes, these platforms have been known to outright demonetize the creator, where the person is no longer able to earn an income from the content that they create. We think that these platforms have too much power over the livelihoods of people.
 
-At our current iteration of the product, Zesty enables tokenization of digital ad spaces, whether it's in VR or a section of a livestream into an NFT. The NFT can be rented out to an advertiser. The revenue from the rental would go directly to the creator on-chain. Zesty Market will generate revenues from fees. We plan to offer the product first for the WebXR market, but will be expanding to other platforms.
+The current iteration of Zesty enables the tokenization of digital ad spaces. Using Zesty's open-sourced SDK, creators are able to tokenize spaces in games or livestreams into an NFT. Using our market contract, creators will be able to rent out time slots to a potential advertiser. The revenue from the rental would go directly to the creator on-chain. Zesty Market will generate a revenue from fees which will be redistributed into further development of the protocol and community. Currently, the SDK supports: WebXR platforms, Unity, Cryptovoxels, and we plan to expand to other platforms where there is demand for such services.
 
-Zesty will exit to the community, which means that one day we will be owned by our most loyal users, which will include creators and advertisers. So instead of having to purchase shares of Google (who owns YouTube) or Amazon (who owns Twitch), people will be able to grow their ownership share in Zesty just by using it. With a financial and attention ecosystem that would be favorable for creators, Zesty Market will pave the way for the future metaverse (whatever this might be), where everyone has a stake.
+Zesty will exit to the community, which means that one day we will be owned by our most loyal users, which will include creators and advertisers. So instead of having to purchase shares of Google (who owns YouTube) or Amazon (who owns Twitch), people will be able to grow their ownership share in Zesty just by using it. With a financial and attention ecosystem that would be favorable for creators, Zesty Market will pave the way for an open metaverse where everyone has a stake.
+
+## Our Commitment to Building the Open Metaverse
+
+The Metaverse was a term that emerged in Neal Stephenson's book Snowcrash. The idea of an immersive virtual society where dreams can become digital reality has captivated people for decades. The idea spurred stories like Ready Player One/Two, and Sword Art Online. However, the setting in all cases have been notably dystopian with some evil corporation being the centre of misery.&#x20;
+
+To avoid a dystopian Metaverse, it is necessary for communities to have power over the Metaverse. Monetization and how money flows plays a significant role in this power dynamics. Web3 and cryptocurrencies had introduced new primitives and ways we can think about monetization. Knowledge is power, cryptography mediates knowledge, therefore cryptography mediates power. With Web3, tokenization, and NFTs we now have the ability to declare digital property rights that can be owned by people without the need of corruptible authorities. Truth and ownership is now enshrined through distributed digital ledgers. Historically, wars have been fought over property rights. Now, the revolution on digital property rights will be non-violent. It is a revolution fueled by innovative ideas that will change the way society will work.&#x20;
+
+Visions remain visions without the necessary footwork and human coordination. Zesty seeks to help facilitate this and provide the foundations for creators to monetize freely and easily with web3. We expect a feedback loop with respect to content being created and monetization opportunities being present in the Metaverse. With more opportunities for wealth, more people will create content in the Metaverse, resulting in more emergent opportunities. Rogue players will want to eat a large chunk of this pie at the expense of others. Centralized app stores will tend to exhibit rent-seeking behaviors when they reach some critical mass. They may appear open at first, but user will not be able to avoid a bait-and-switch once they are beholden to the system.&#x20;
+
+The need for decentralized alternatives has never been more important. This calls for open monetization mechanisms, open data platforms, open tooling, that is accessible to the community. All these need to be designed in a way to avoid rent-seeking behaviors and a bait-and-switch scenario should the protocol mature. Zesty seeks to steward new ways of rethinking valuable web2 business models in a web3 paradigm where users are not the product but are important stakeholders.
 
 ## Scarcity and Cash Flow
 
@@ -24,26 +48,20 @@ Zesty NFTs have the capacity to generate cash flow, which makes valuation of the
 
 We foresee a future where it might be possible to sell an online business through a transaction on a blockchain, by transferring a revenue-accruing NFT and its related ENS domains. While we are excited by all of the cool things that DeFi has to offer, DeFi needs real businesses building on top of the new financial system that need the leverage DeFi provides to borrow and grow. What we are building at Zesty Market touches upon the potential to put entire digital businesses on-chain.
 
-## Metaverse
+## System Design
 
-The metaverse, in our opinion, is wherever people spend their time and resources in the virtual world. The time and resources may be used to form friendships, build ideas, craft virtual goods, increase social clout, and exercise their influence. It is already happening today on platforms like Discord and Twitter. We see these platforms already as the "metaverse".
-
-WebXR is a device API for AR and VR hardware to be able to interact with immersive Web experiences. With the growth of VR headsets and openly distributed WebXR experiences on the Web and platforms like [SideQuest](https://sidequestvr.com), there is a growing need for an open monetization mechanism. With the development of a WebGPU API, the web will become a compelling medium to build spatial experiences on and become a competitive option to native experiences.
-
-Zesty Market recognizes that the WebXR space is presently small despite future potential. As such the project will look into other verticals in the metaverse economy, like streaming (Twitch, YouTube Live, etc.).
-
-## How it Works (WIP)
+### Zesty Market
 
 In online advertising, there are three key stakeholders: Advertisers, Publishers/Creators, and Consumers. Advertisers buy advertising slots from publishers to leverage their reach in order to get information out to consumers. This structure is the basis of the attention economy that the internet is built upon. In the Web 2.0 model, the relationship between the key stakeholders is mediated by a centralized third party who mediates the flow of money as well as the flow of attention. Zesty Market proposes a decentralized structure for how this could be implemented.
 
 The sale and fulfillment of the advertising slot are done in two parts:
 
 1. A Dutch Auction for price discovery of the advertising slot
-2. A Hash Timelock Contract augmented with Publicly Verifiable Secret Sharing (PVSS) for decentralized validation of the advertising slot. 
+2. A Hash Timelock Contract augmented with Publicly Verifiable Secret Sharing (PVSS) for decentralized validation of the advertising slot.&#x20;
 
 By treating the serving of media on an advertising slot as a delivery vs payment (DvP) problem, the system is able to facilitate value transfer in a decentralized way. Profits from the auction are redistributed to stakers (validators and nominators). Fraud is disincentivized through cryptoeconomic mechanisms.
 
-## Dutch Auction of NFT Advertising Timeslots
+#### Dutch Auction of NFT Advertising Timeslots
 
 Zesty Market uses a Dutch Auction for price discovery of advertising timeslots. Publishers/Creators on Zesty Market would need to first create advertising slots by minting non-fungible tokens (NFT) that would represent timeshares of an advertising space that the publisher owns. Once the advertising slots have been minted, the publisher can create a Dutch auction for the NFT for bidding by advertisers. As the NFT represents a timeshare, the value of the NFT would decrease and approach zero as it reaches the end of the timeslot. The value of the NFT on the Dutch auction is represented by a linearly decreasing function as follows:
 
@@ -65,11 +83,11 @@ When an advertiser bids for the NFT, the Dutch auction concludes and the system 
 
 An expiration time for the Dutch auction can be set to an appropriate time order to prevent pointless bidding. The default expiration time is 1 hour before the expiration of the advertising slot. An example of pointless bidding is as follows. For example, bidding for 1 minute prior to the expiration of the advertising. Due to block confirmation times, it can be difficult to fulfill an advertising service within 1 minute. As such, the default expiration time of the Dutch auction is set at 1 hour before the expiration of the NFT timeslot.
 
-## Hash Timelock Contract with Publicly Verifiable Secret Sharing for Advertising Services
+#### Hash Timelock Contract with Publicly Verifiable Secret Sharing for Advertising Services
 
 To mediate the successful completion of advertising service. It is possible to model the system as a delivery vs payment (DvP) problem. DvP is formerly a term used in security settlements to guarantee that the transfer of payment is made only when the transfer of a security is made. In the case of advertising, it is analogous to the payment for advertising slots when the advertising service concludes. We will first discuss the case of securities settlements, this can be implemented using a Hash Timelock Contract.
 
-### **Hash Timelocks explained**
+#### **Hash Timelocks explained**
 
 The Hash Timelock Contract is a vault containing a Hashlock and a Timelock, this ensures that two parties are able transfer funds securely without intermediaries. The normal flow for a Hash Timelock Contract is as follows:
 
@@ -83,7 +101,7 @@ In the case of security settlements or token transfers, the flow mentioned above
 
 In the usual Web2.0 fashion, the guarantee is usually done by a centralized 3rd party who would mediate any anomalies. However, using cryptography techniques we are able to disintermediate the centralized 3rd party into a decentralized one using Publicly Verifiable Secret Sharing.
 
-### **Publicly Verifiable Secret Sharing explained**
+#### **Publicly Verifiable Secret** Sharing **explained**
 
 Publicly Verifiable Secret Sharing, split into two processes. Secret sharing, and verifying the secret shares in a public way. While tautological, it is not necessarily intuitive.
 
@@ -99,10 +117,3 @@ To decentralize the secret-sharing process. The protocol will introduce multiple
 
 ![Sequence Diagram of the Auction Hashtime Lock Protocol](.gitbook/assets/AuctionHTLC.png)
 
-## Operator Node Implementation
-
-### Dealer Mode
-
-### Operator Mode
-
-Selenium + Computer Vision based verification system
