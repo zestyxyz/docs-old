@@ -6,13 +6,13 @@ description: Version 0.3
 
 ## Changelog
 
-* Version 0.4 (To be completed)
-  * Add "Beacons" into "System Design"
 * Version 0.3 (11 Dec 2021)
   * Added "Changelog"
   * Update Abstract to reflect changes in product
   * Update "Metaverse" to "Building the Open Metaverse"
-  * Refactor "How it Works" into "System Design"
+  * Update "Scarcity and Cash Flow" to "Tokenizing Attention and Building Bridges"
+  * Update "How it Works" into "System Design"
+  * Add "Beacons" into "System Design"
 * Version 0.2 (May 2021)
   * Refine wording
 * Version 0.1 (Jan 2021)
@@ -38,19 +38,23 @@ Visions remain visions without the necessary footwork and human coordination. Ze
 
 The need for decentralized alternatives has never been more important. This calls for open monetization mechanisms, open data platforms, open tooling, that is accessible to the community. All these need to be designed in a way to avoid rent-seeking behaviors and a bait-and-switch scenario should the protocol mature. Zesty seeks to steward new ways of rethinking valuable web2 business models in a web3 paradigm where users are not the product but are important stakeholders.
 
-## Scarcity and Cash Flow
+## Tokenizing Attention and Building Bridges
 
-Human attention has value because people can only pay attention to few things at once. Advertisers pay for this scarcity because advertisements can influence the person into spending their money on the product being advertised. This is obvious, so we'll move onto why Zesty will be using NFTs.
+Attention is a vital resource in the internet. Attention is finite, there is a finite number of people and a finite amount of time that people can pay attention to something at once. Systems that are able to direct attentions act like important trade routes on the internet. Corporations who manage search engines, social media platforms, large e-commerce marketplaces, effectively own these trade routes. This makes such corporations really powerful as access to markets will be decided by such corporations. To sell anything on the internet, merchants will need to acquire attention which will be largely dominated by such corporations.
 
-Fundamentally, NFTs are useful for representing assets that are scarce or one-of-a-kind. NFTs provide a nice way to find out who owns something digital, and to pay the person for its use or full ownership. It makes sense for creators to tokenize their ad opportunities as NFTs, as this allows anyone in the world with an Internet connection and MetaMask wallet to purchase the ad slot, while also allowing the creator to participate in the growing DeFi ecosystem to earn yield with their Zesty NFT.
+At Zesty we acknowledge that there is an emerging creator class on the internet (influencers, game developers). They are able to generate substantial attention on their own. Right now this emerging creator class has no real means of monetizing such attention without a centralized corporation like Youtube, Twitch, Google AdMob etc, who would have significant influence over how creators should operate. This undermines creativity and the freedom of expression.&#x20;
 
-Zesty NFTs have the capacity to generate cash flow, which makes valuation of these NFTs more predictable with traditional financial models. While the NFT is being continually rented out on the market, there will always be a floor price for the asset. While we don't think that Zesty NFTs will be transferred often from one person or entity to another, the ability for our NFTs to generate revenue by the virtue of being a surface for ads is a unique idea that the NFT ecosystem has not seen before.
+Bridging this merchant class and creator class in a decentralized way will be an important milestone in web3. Through decentralization, creators and merchants will be able to operate more autonomously. By tokenizing assets as NFTs and renting time slots out for advertising income, creators will be able to create new financial vehicles for themselves that would be valuable. Such NFTs are able to capture cash flow and will be able to act as financial assets. This makes it possible for creators to underwrite of loans and insurances which would not have been accessible in traditional finance. With further composability between NFTs and DeFi primitives, creators are also able to access new financial opportunities that would not have been possible.
 
-We foresee a future where it might be possible to sell an online business through a transaction on a blockchain, by transferring a revenue-accruing NFT and its related ENS domains. While we are excited by all of the cool things that DeFi has to offer, DeFi needs real businesses building on top of the new financial system that need the leverage DeFi provides to borrow and grow. What we are building at Zesty Market touches upon the potential to put entire digital businesses on-chain.
+Advertising in the Metaverse will resemble more like portals that are tucked away in game worlds. It will be a primary way of discovering new worlds and games in the Metaverse. The natural way of discovering things in a spatial way is walking through doors or portals. Most games are incentivized towards lock-in and selfish value capture. Incentivizes will be required to build an open Metaverse. Through the adoption of the Zesty SDK in various games and experiences, we hope to build bridges between games. We hope to create a seamless way of discovering new experiences that are favorable to games and make it profitable for experiences to share users. The side-effect of adopting the Zesty SDK is that there would now be a common code standard adopted throughout games making the sharing of game assets throughout disparate game experiences a possibility.&#x20;
+
+At Zesty, we envision a future where it becomes possible to put businesses on-chain. It's an inevitable consequence of digitalizing businesses. The cashflow NFTs we pioneer at Zesty is one such construct that would aid in this transition. We foresee a future where it might be possible to sell an online business through a transaction on a blockchain, by transferring a revenue-accruing NFT and its related ENS domains. With DeFi opportunities, digital businesses will be able to tap into new models of capital and financing, increasing capital efficiency like never before. With lesser border restrictions on capital flow, we envision new business opportunities that should arise from web3 primitives. Our mission at Zesty is to research and ideate on new web3 primitives that should unlock new opportunities for people.
 
 ## System Design
 
-### Zesty Market
+### Zesty Market Protocol
+
+Zesty's flagship product is a decentralized p2p marketplace for advertising spaces. We outline the design of this decentralized advertising system.
 
 In online advertising, there are three key stakeholders: Advertisers, Publishers/Creators, and Consumers. Advertisers buy advertising slots from publishers to leverage their reach in order to get information out to consumers. This structure is the basis of the attention economy that the internet is built upon. In the Web 2.0 model, the relationship between the key stakeholders is mediated by a centralized third party who mediates the flow of money as well as the flow of attention. Zesty Market proposes a decentralized structure for how this could be implemented.
 
@@ -59,61 +63,76 @@ The sale and fulfillment of the advertising slot are done in two parts:
 1. A Dutch Auction for price discovery of the advertising slot
 2. A Hash Timelock Contract augmented with Publicly Verifiable Secret Sharing (PVSS) for decentralized validation of the advertising slot.&#x20;
 
-By treating the serving of media on an advertising slot as a delivery vs payment (DvP) problem, the system is able to facilitate value transfer in a decentralized way. Profits from the auction are redistributed to stakers (validators and nominators). Fraud is disincentivized through cryptoeconomic mechanisms.
+By treating the serving of media on a digital space as a delivery vs payment (DvP) problem, the system is able to facilitate value transfer in a decentralized way. Profits from the auction are redistributed to validators and the DAO (for future development of the protocol).&#x20;
 
-#### Dutch Auction of NFT Advertising Timeslots
+#### Dutch Auction of Time Slots
 
-Zesty Market uses a Dutch Auction for price discovery of advertising timeslots. Publishers/Creators on Zesty Market would need to first create advertising slots by minting non-fungible tokens (NFT) that would represent timeshares of an advertising space that the publisher owns. Once the advertising slots have been minted, the publisher can create a Dutch auction for the NFT for bidding by advertisers. As the NFT represents a timeshare, the value of the NFT would decrease and approach zero as it reaches the end of the timeslot. The value of the NFT on the Dutch auction is represented by a linearly decreasing function as follows:
+Zesty Market uses a Dutch Auction for price discovery of advertising time slot. Publishers/Creators on Zesty Market would need to first create advertising slots by minting non-fungible tokens (NFT) that would represent some kind of digital space.&#x20;
+
+Once the NFT is minted, the publisher would be able to deposit the NFT into the Zesty Market contract to rent out time slots. By depositing the NFT, the Publisher is not able to modify the metadata associated with the NFT during the sale and service of the advertising time slot. The publisher would be able to define time slots and sell those time slots on the marketplace.&#x20;
+
+The primary sale model is a Dutch auction.  The value of the time slot is represented by a linearly decreasing function as follows:
 
 $$V(T_{i}) = V(T_{0}) - (T_{i} - T_{0}) \times \frac{V(T_{0})}{T_{n} - T_{0}}$$
 
 **Definitions**
 
-$$V(T_i)$$refers to the current NFT price in some ERC20 tokens
+$$V(T_i)$$refers to the current time slot price
 
-$$V(T_{0})$$refers to the starting price of the NFT in ERC20 tokens
+$$V(T_{0})$$refers to the starting price of the time slot
 
 $$T_i$$refers to the current time in Unix time
 
 $$T_0$$refers to the starting time of the Dutch auction in Unix time
 
-$$T_n$$refers to the expiration time of the NFT timeslot in Unix time
+$$T_n$$refers to the expiration time of the time slot in Unix time
 
-When an advertiser bids for the NFT, the Dutch auction concludes and the system proceeds to the next phase which is the Hash Timelock phase. The funds that are used for bidding would be locked in the Hash Timelock. No funds will be transferred until the successful conclusion of the Hash Timelock phase.
+When the time slot approaches expiry, the price of the auction approaches zero. The walk away price for the time slot can be defined by the publisher based on the ending time of the auction on the contract. If the end time of the auction is the same as the end time of the time slot, the walk away price would be zero. The expiration time for auction can be set to an appropriate time in order to prevent pointless bidding. The default expiration time is 1 hour before the expiration of the advertising slot. An example of pointless bidding is as follows. For example, bidding for 1 minute prior to the expiration of the advertising. Due to block confirmation times, it can be difficult to fulfill an advertising service within 1 minute. As such, the default expiration time of the Dutch auction is set at 1 hour before the expiration of the NFT time slot.
 
-An expiration time for the Dutch auction can be set to an appropriate time order to prevent pointless bidding. The default expiration time is 1 hour before the expiration of the advertising slot. An example of pointless bidding is as follows. For example, bidding for 1 minute prior to the expiration of the advertising. Due to block confirmation times, it can be difficult to fulfill an advertising service within 1 minute. As such, the default expiration time of the Dutch auction is set at 1 hour before the expiration of the NFT timeslot.
+The Dutch Auction model is chosen as the primary mode of sale as it has the ability to regulate prices towards some optima. Advertisers would need to find the optimum price to bid for. If the expected cost of customer acquisition on a particular time slot is greater than the revenue generated per conversion, it would not be rational to bid on the time slot. If a publisher falsely advertises an inflated expected impression or click counts for a time slot, future buyers will be less likely to be buyers as purchases would not be rational. This results in a decrease in price for fraudulent time slots. This makes it unprofitable for fraudulent publishers to operate on the network. As the Zesty Market Protocol does not charge advertising fees based on click or impression count and gives buyers the autonomy to bid in a white-box manner, the protocol becomes resilient to click and impression fraud unlike conventional advertising platforms.
+
+We acknowledge that it may be impractical for advertisers to bid manually. With on-chain data and off-chain data provided through Beacons (see "Beacons" section) it is possible for a secondary marketplace for bidding strategies to emerge. Bot makers who are adept at building out strategies can in future sell such bidding strategies to advertisers to help optimize advertising spend and cost of customer acquisition.
+
+When an advertiser succesfully bids for the time slot, the Dutch auction concludes and the system proceeds to the next phase which is the Hash Timelock phase. The funds that are used for bidding would be locked in the Hash Timelock. No funds will be transferred until the successful conclusion of the Hash Timelock phase.
 
 #### Hash Timelock Contract with Publicly Verifiable Secret Sharing for Advertising Services
 
 To mediate the successful completion of advertising service. It is possible to model the system as a delivery vs payment (DvP) problem. DvP is formerly a term used in security settlements to guarantee that the transfer of payment is made only when the transfer of a security is made. In the case of advertising, it is analogous to the payment for advertising slots when the advertising service concludes. We will first discuss the case of securities settlements, this can be implemented using a Hash Timelock Contract.
 
-#### **Hash Timelocks explained**
+#### **Hash Timelocks**
 
 The Hash Timelock Contract is a vault containing a Hashlock and a Timelock, this ensures that two parties are able transfer funds securely without intermediaries. The normal flow for a Hash Timelock Contract is as follows:
 
-1. Alice locks A-tokens a vault and sets a timelock and a hashlock. The timelock prevents a party from withdrawing funds prior to expiration, and the hashlock is simply a hash of a secret.
-2. Bob locks B-tokens into a vault and sets a timelock and copies the hash of the hashlock of Alice's vault into his vault.
+1. Alice locks A-tokens into a vault and sets a timelock and a hashlock. The timelock prevents a party from withdrawing funds prior to some expiration time, and the hashlock is a hash of a secret.
+2. Bob locks B-tokens into a vault and sets a timelock and copies the hashlock of Alice's vault into his vault.
 3. Alice claims B-tokens from Bob's vault by revealing the secret which unlocks the hashlock.
 4. Bob now knows the secret and unlocks funds from Alice's vault. Note that Alice could not withdraw funds yet as the timelock is still present.
 5. If Alice does not claim the funds, the timelock expires for both vaults and the transfer is canceled.
 
 In the case of security settlements or token transfers, the flow mentioned above is sufficient. However, an immediate problem emerges in the case of advertising services where one side possesses an asset to be transferred while the other is providing a service. There is an added complication of guaranteeing that a time-based service should be completed.
 
-In the usual Web2.0 fashion, the guarantee is usually done by a centralized 3rd party who would mediate any anomalies. However, using cryptography techniques we are able to disintermediate the centralized 3rd party into a decentralized one using Publicly Verifiable Secret Sharing.
+In web2, a centralized 3rd party would help mediate disputes. However, using cryptography techniques we are able to disintermediate the centralized 3rd party into a decentralized one using Publicly Verifiable Secret Sharing.
 
-#### **Publicly Verifiable Secret** Sharing **explained**
+#### **Publicly Verifiable Secret** Sharing
 
-Publicly Verifiable Secret Sharing, split into two processes. Secret sharing, and verifying the secret shares in a public way. While tautological, it is not necessarily intuitive.
+Publicly Verifiable Secret Sharing is a way of distributing secret shares in a way where all parties can verify that the secret shares distributed are valid.
 
-Secret shares are a way of distributing a secret into multiple parts, such that when you obtain sufficient amount of shares you would be able to obtain the original secret. In Zesty Market's case, this secret is used to unlock the hashlock which will contain the locked funds from the Dutch Auction which is held in the Hash Timelock contract described in the previous section. The effect of converting the secret for the hashlock into secret shares allows for the tokenization of time into a cryptographic object.
+Secret sharing allows for a secret to be split into multiple secret shares, such that when you obtain a sufficient amount of secret shares you are able to find the original secret.
 
-Upon successful advertisement at a random timeslot, a secret share will be revealed by a random validator node. When enough secret shares are known the publisher would be able to obtain the secret that would unlock the hashlock in the vault. If the publisher does not advertise successfully the publisher will not be able to obtain sufficient shares to obtain the secret to unlock the vault. The advertiser would then be refunded at the end of the timelock.
+In the Zesty Market protocol, a randomly selected validator from a set of decentralized validators will be assigned as a dealer. This dealer will hash the secret and set it as the hashlock for the hash timelock contract and distribute secret shares to other validators on the network. It will also publish a string proof that the shares are valid. &#x20;
 
-To decentralize the secret-sharing process. The protocol will introduce multiple operator/validator nodes which will be in charge of the validation process. A random subset of validators will be elected for each hash timelock contract.
+A validator would then check whether an advertisement is served at a random timeslot. Should the asset be served, the secret share will be published by the validator. The checking would be done on the validation client using the SIFT algorithm (Scale-Invariant Feature Transform), which would check for matching features in the shown media asset and media asset denoted on-chain by an advertiser. This validator may be a bot or a human user. In the case of a human user, the validation acts like a play-to-earn scheme, where the user gets paid to visit digital spaces. Validators would be rewarded either way should the advertising media be served or not.
 
-(TO DESCRIBE FURTHER)
+When enough secret shares are known the publisher would be able to reconstruct the secret that would unlock the hashlock and withdraw the locked funds. If the publisher did not serve as expected, the publisher dvertise successfully the publisher will not be able to obtain sufficient shares to obtain the secret to unlock the vault. The advertiser would then be refunded at the end of the timelock.
 
 **Protocol Design**
 
-![Sequence Diagram of the Auction Hashtime Lock Protocol](.gitbook/assets/AuctionHTLC.png)
+![Sequence Diagram of the Zesty Market Protocol](.gitbook/assets/AuctionHTLC.png)
 
+### Beacons
+
+An essential part of the advertising and the commerce pipeline is data. There are off-chain data that are very valuable but it would not make sense for the data to be put on-chain. A problem with analytics in the metaverse at the current moment is that is not good universal way of capturing data in a spatial way. This data is necessary to help with the discoverability of places in the Metaverse. There will need to be a "Google Maps" for the Metaverse in order for people to discover things intelligibly as spatial content increases exponentially.&#x20;
+
+In order to build a map of the Metaverse, we will need data. To collect such data we will need to incentivize people to be willing to provide such data. As such one complimentary use case for such data is the Zesty Market Protocol. Collecting impressions and clickthrough rates at the current moment helps to compliment usage of the Zesty Market Protocol. The impression counts and clickthrough rates allow us to construct a heatmap of Metaverse experiences and where people cluster at. As the Beacon technology matures and more data is being collected, it would be possible to engineer additional data products on the Metaverse increasing the kinds of services that could possibly exist.
+
+Data collection is a loaded term and can feel dirty but immense value can be created through the aggregation of data. As part of our commitment to building the open Metaverse, Zesty will seek to make this data layer a digital public good incentivized through tokenomics at Zesty. Beacons are built using Orbit DB and IPFS, as such decentralized ownership of the system is possible. There will be significant engineering effort required to create this system. As of now (11 Dec 2021), Beacons are hosted in a centralized way to simplify engineering efforts. Beacons are a feature that can be enabled on the Zesty SDK to allow for the collection of data. This is entirely opt-in. Data collection at the moment is limited to loads and clickthroughs which are anonymous. We think that data privacy is a human right and will do our best to respect it.
