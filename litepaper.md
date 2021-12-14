@@ -6,13 +6,13 @@ description: Version 0.3
 
 ## Changelog
 
-* Version 0.3 (11 Dec 2021)
+* Version 0.3 (Dec 2021)
   * Added "Changelog"
   * Update Abstract to reflect changes in product
-  * Update "Metaverse" to "Building the Open Metaverse"
-  * Update "Scarcity and Cash Flow" to "Tokenizing Attention and Building Bridges"
-  * Update "How it Works" into "System Design"
-  * Add "Beacons" into "System Design"
+  * ”Metaverse” —> "Building the Open Metaverse"
+  * "Scarcity and Cash Flow" —> "Tokenizing Attention and Building Bridges"
+  * "How it Works" —> "System Design"
+  * Add "Beacons"
 * Version 0.2 (May 2021)
   * Refine wording
 * Version 0.1 (Jan 2021)
@@ -20,23 +20,33 @@ description: Version 0.3
 
 ## Abstract
 
-Zesty Market is a monetization platform for Internet communities, owned by Internet communities. Our goal is to provide creators with a method of capturing the value that they create without dependence on a centralized platform.
+Zesty Market empowers entrepreneurs and builders in the metaverse with essential business tools. Our goal is to provide creators with a method of capturing the value that they create without dependence on a centralized platform.
 
-Our first product is an alternative to centralized advertising networks that have come to extract an outsized amount of value from creators. Twitch takes 50% of all revenue from subscriptions, and YouTube only shares 30-40% of the ad revenue with its video creators. Sometimes, these platforms have been known to outright demonetize the creator, where the person is no longer able to earn an income from the content that they create. We think that these platforms have too much power over the livelihoods of people.
+Our first product is an open market for the buying and selling of banner spaces in virtual worlds, whether they are blockchain-based (like Cryptovoxels) or not (standard WebXR/Unity apps).
 
-The current iteration of Zesty enables the tokenization of digital ad spaces. Using Zesty's open-sourced SDK, creators are able to tokenize spaces in games or livestreams into an NFT. Using our market contract, creators will be able to rent out time slots to a potential advertiser. The revenue from the rental would go directly to the creator on-chain. Zesty Market will generate a revenue from fees which will be redistributed into further development of the protocol and community. Currently, the SDK supports: WebXR platforms, Unity, Cryptovoxels, and we plan to expand to other platforms where there is demand for such services.
+We are building an alternative to centralized advertising networks that have come to extract an outsized amount of value from creators. Twitch takes 50% of all revenue from subscriptions, and YouTube takes 30-40% of its creators’ ad revenue.&#x20;
+
+Sometimes, these platforms have been known to outright demonetize the creator, where the person is no longer able to earn an income from the content that they create. It’s clear that these platforms have too much power.
+
+Using Zesty's open-sourced SDK, creators are able to tokenize spaces in games or livestreams into an NFT. Using our market contract, creators can rent out time slots to a potential advertiser. The revenue from the rental would go directly to the creator on-chain.&#x20;
+
+Zesty Market generates revenue from fees from market transactions.&#x20;
+
+Currently, the SDK supports: WebXR platforms, Unity, Cryptovoxels, and we plan to expand to other platforms where there is demand for such services.
 
 Zesty will exit to the community, which means that one day we will be owned by our most loyal users, which will include creators and advertisers. So instead of having to purchase shares of Google (who owns YouTube) or Amazon (who owns Twitch), people will be able to grow their ownership share in Zesty just by using it. With a financial and attention ecosystem that would be favorable for creators, Zesty Market will pave the way for an open metaverse where everyone has a stake.
 
 ## Our Commitment to Building the Open Metaverse
 
-The Metaverse was a term that emerged in Neal Stephenson's book Snowcrash. The idea of an immersive virtual society where dreams can become digital reality has captivated people for decades. The idea spurred stories like Ready Player One/Two, and Sword Art Online. However, the setting in all cases have been notably dystopian with some evil corporation being the centre of misery.&#x20;
+The Metaverse was a term that emerged from Neal Stephenson's book Snowcrash. The idea of an immersive virtual society where dreams can become digital reality has captivated people for decades. The idea spurred stories like Ready Player One/Two, and Sword Art Online. However, the setting in all cases have been notably dystopian with some evil corporation being the centre of misery.
 
-To avoid a dystopian Metaverse, it is necessary for communities to have power over the Metaverse. Monetization and how money flows plays a significant role in this power dynamics. Web3 and cryptocurrencies had introduced new primitives and ways we can think about monetization. Knowledge is power, cryptography mediates knowledge, therefore cryptography mediates power. With Web3, tokenization, and NFTs we now have the ability to declare digital property rights that can be owned by people without the need of corruptible authorities. Truth and ownership is now enshrined through distributed digital ledgers. Historically, wars have been fought over property rights. Now, the revolution on digital property rights will be non-violent. It is a revolution fueled by innovative ideas that will change the way society will work.&#x20;
+To avoid a dystopian Metaverse, it is necessary for communities to have power over the Metaverse. Monetization and how money flows plays a significant role in this power dynamics. Web3 and cryptocurrencies had introduced new primitives and ways we can think about monetization. Knowledge is power, cryptography mediates knowledge, therefore cryptography mediates power.
 
-Visions remain visions without the necessary footwork and human coordination. Zesty seeks to help facilitate this and provide the foundations for creators to monetize freely and easily with web3. We expect a feedback loop with respect to content being created and monetization opportunities being present in the Metaverse. With more opportunities for wealth, more people will create content in the Metaverse, resulting in more emergent opportunities. Rogue players will want to eat a large chunk of this pie at the expense of others. Centralized app stores will tend to exhibit rent-seeking behaviors when they reach some critical mass. They may appear open at first, but user will not be able to avoid a bait-and-switch once they are beholden to the system.&#x20;
+With Web3, tokenization, and NFTs, we now have the ability to declare digital property rights that can be owned by people without the need of corruptible authorities. Truth and ownership is now enshrined through distributed digital ledgers. Historically, wars have been fought over property rights. Now, the revolution on digital property rights will be non-violent. It is a revolution fueled by innovative ideas that will change the way society will work.
 
-The need for decentralized alternatives has never been more important. This calls for open monetization mechanisms, open data platforms, open tooling, that is accessible to the community. All these need to be designed in a way to avoid rent-seeking behaviors and a bait-and-switch scenario should the protocol mature. Zesty seeks to steward new ways of rethinking valuable web2 business models in a web3 paradigm where users are not the product but are important stakeholders.
+Visions remain visions without the necessary footwork and human coordination. Zesty seeks to help facilitate this and provide the foundations for creators to monetize freely and easily with web3. We expect a feedback loop with respect to content being created and monetization opportunities being present in the Metaverse. With more opportunities for wealth, more people will create content in the Metaverse, resulting in more emergent opportunities. Rogue players will want to eat a large chunk of this pie at the expense of others. Centralized app stores will tend to exhibit rent-seeking behaviors when they reach some critical mass. They may appear open at first, but users and developers will not be able to avoid a bait-and-switch once they are beholden to the system.&#x20;
+
+The need for decentralized alternatives has never been more important. This calls for open monetization mechanisms, open data platforms, and open tooling that is accessible to the community. All these need to be designed in a way to avoid rent-seeking behaviors and a bait-and-switch scenario should the protocol mature. Zesty seeks to steward new ways of rethinking valuable web2 business models in a web3 paradigm where users are not the product but are important stakeholders.
 
 ## Tokenizing Attention and Building Bridges
 
