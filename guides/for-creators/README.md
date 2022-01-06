@@ -68,6 +68,10 @@ On the Space NFT page, there are a few things you can do:
 * **Integration**
   * You'll find the settings to set-up your Space NFT on your content platform here
 
+### **Watch our video to see the entire process:** <a href="#watch-our-video-to-see-the-entire-process" id="watch-our-video-to-see-the-entire-process"></a>
+
+{% embed url="https://www.youtube.com/watch?v=bDrM0MDB_8I" %}
+
 ## 2. Create auction
 
 From the [Space](https://app.zesty.market/spaces) page, select the Space you want to create an auction with.

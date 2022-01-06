@@ -66,6 +66,10 @@ You'll received a MetaMask pop-up notification when the transaction is done. The
 
 Now that you have your Campaign set-up, you're ready to start bidding on the timeslot of the creator of your choice.
 
+### **Watch our video to see the entire process:** <a href="#watch-our-video-to-see-the-entire-process" id="watch-our-video-to-see-the-entire-process"></a>
+
+{% embed url="https://www.youtube.com/watch?v=v6K6J44WsGI" %}
+
 ## 2. Bid on timeslot
 
 First you'll need to go to the **Market** page. On the page, you'll be able to see all the spaces that have been created by the creators, ready for you to bid on. **Choose** the space you desire, for the purpose of this guide, we'll choose Zesty Ad Demo space.
@@ -98,7 +102,11 @@ You may also check on your Campaign's page to see your active bids.
 
 ![](<../.gitbook/assets/image (13).png>)
 
-## 3. Refunds
+### **Watch our video to see the entire process:** <a href="#watch-our-video-to-see-the-entire-process" id="watch-our-video-to-see-the-entire-process"></a>
+
+{% embed url="https://www.youtube.com/watch?v=lEM9-r4PiRQ" %}
+
+## **3.**Refunds
 
 If the advertisement was not successfully displayed you will be refunded a majority of your USDC, though some USDC will be taken by the network for fees.
 

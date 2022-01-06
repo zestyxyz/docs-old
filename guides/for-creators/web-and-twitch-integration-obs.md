@@ -86,3 +86,7 @@ On the bottom edge of the source, press Alt and click on the line. You'll be abl
 Finally, rearrange and place the banner where you want it to show. On the example above, I've added it at the bottom left of the scene so it doesn't distract from my livestream.
 
 And that's it. You're done with OBS integration!
+
+### **Watch our video to see the entire process:** <a href="#watch-our-video-to-see-the-entire-process" id="watch-our-video-to-see-the-entire-process"></a>
+
+{% embed url="https://www.youtube.com/watch?v=a9i8ULRwcUI" %}

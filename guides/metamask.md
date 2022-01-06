@@ -72,7 +72,7 @@ Fill in below information:
 * **New RPC URL**: `https://rpc-mainnet.maticvigil.com/`
 * **Chain ID**: `137`
 * **Currency Symbol (optional)**: `MATIC`
-*   **    **
+*    ****
 
     **Block Explorer URL (optional)**: `https://polygonscan.com/`
 
@@ -81,6 +81,10 @@ Fill in below information:
 And click Save when you're done! You'll be switched to Polygon network when you're done.
 
 You may switch to other networks at anytime by clicking on the network name on the network dropdown.
+
+### **Watch our video to see the entire process** <a href="#watch-our-video-to-see-the-entire-process" id="watch-our-video-to-see-the-entire-process"></a>
+
+{% embed url="https://www.youtube.com/watch?v=m5WyNgrKbPM" %}
 
 ### **Getting Matic from Matic Faucet**
 
