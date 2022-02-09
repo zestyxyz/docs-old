@@ -12,6 +12,7 @@
   * [WebXR Integration](guides/for-creators/webxr-integration.md)
   * [Unity Integration](guides/for-creators/unity-integration.md)
   * [Cryptovoxels Integration](guides/for-creators/cryptovoxels-integration.md)
+  * [Decentraland Integration](guides/for-creators/decentraland-integration.md)
   * [Web & Twitch Integration (OBS)](guides/for-creators/web-and-twitch-integration-obs.md)
   * [Collect Funds](guides/for-creators/collect-funds.md)
 
