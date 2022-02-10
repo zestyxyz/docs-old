@@ -28,8 +28,8 @@ _Advertisers are enable to create campaigns (ads) and bid on open ad spaces crea
 
 ### **Which wallets does Zesty support?**
 
-_Zesty currently supports _**CoinBase Wallet & Metamask**_ as it enables you to integrate easy, anonymous, and secure international payments and transactions into web3 applications._
+_Zesty currently supports_ **CoinBase Wallet & Metamask** _as it enables you to integrate easy, anonymous, and secure international payments and transactions into web3 applications._
 
 ### On which network does Zesty operate?
 
-_Once you’ve finished setting up MetaMask, you will need to select the appropriate network in order to interact with Zesty Market. Zesty currently functions on the _**Matic **_Mainnet._
+_Once you’ve finished setting up MetaMask, you will need to select the appropriate network in order to interact with Zesty Market. Zesty currently functions on the_ **Matic** _Mainnet._
