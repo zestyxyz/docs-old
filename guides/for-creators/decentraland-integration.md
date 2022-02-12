@@ -6,6 +6,12 @@ description: >-
 
 # Decentraland Integration
 
+**Video Tutorial**
+
+{% embed url="https://www.youtube.com/watch?v=6sn8blLfoiI" %}
+Video tutorial on how to use Zesty Banners in Decentraland's builder
+{% endembed %}
+
 **Step 1**
 
 Download the latest release of the Zesty Banner smart item (it will be the first file listed named "item.zip"), which you can find in the GitHub repository [here](https://github.com/zestymarket/dcl/releases).
