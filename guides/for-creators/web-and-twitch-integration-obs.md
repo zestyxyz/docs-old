@@ -4,6 +4,14 @@ description: How to add your Space NFT to your livestream via OBS Studio or Stre
 
 # Web & Twitch Integration (OBS)
 
+## **Before You Integrate**
+
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more **** instructions.
+
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
 ## Web
 
 #### Step 1a

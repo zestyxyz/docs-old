@@ -9,10 +9,8 @@ description: >-
 ## Summary
 
 1. Creating a Space
-2. Creating an Auction
-3. Integrate
-   1. WebXR Integration
-   2. Web & Twitch Integration (OBS)
+2. Integrate
+3. Creating an Auction
 4. Getting paid
    1. Collect Funds
 
@@ -72,7 +70,31 @@ On the Space NFT page, there are a few things you can do:
 
 {% embed url="https://www.youtube.com/watch?v=bDrM0MDB_8I" %}
 
-## 2. Create auction
+## 2. Integrate
+
+Please refer to the pages below for the integration set-up guide.
+
+{% content-ref url="webxr-integration.md" %}
+[webxr-integration.md](webxr-integration.md)
+{% endcontent-ref %}
+
+{% content-ref url="unity-integration.md" %}
+[unity-integration.md](unity-integration.md)
+{% endcontent-ref %}
+
+{% content-ref url="cryptovoxels-integration.md" %}
+[cryptovoxels-integration.md](cryptovoxels-integration.md)
+{% endcontent-ref %}
+
+{% content-ref url="decentraland-integration.md" %}
+[decentraland-integration.md](decentraland-integration.md)
+{% endcontent-ref %}
+
+{% content-ref url="web-and-twitch-integration-obs.md" %}
+[web-and-twitch-integration-obs.md](web-and-twitch-integration-obs.md)
+{% endcontent-ref %}
+
+## 3. Create auction
 
 From the [Space](https://app.zesty.market/spaces) page, select the Space you want to create an auction with.
 
@@ -100,24 +122,10 @@ When MetaMask notification informs that the transaction is completed, your aucti
 
 And you're done!
 
-## 3. Integrate
-
-Please refer to the pages below for the integration set-up guide.
-
-{% content-ref url="webxr-integration.md" %}
-[webxr-integration.md](webxr-integration.md)
-{% endcontent-ref %}
-
-{% content-ref url="web-and-twitch-integration-obs.md" %}
-[web-and-twitch-integration-obs.md](web-and-twitch-integration-obs.md)
-{% endcontent-ref %}
-
 ## 4. Getting paid
 
 After the slot has been purchased and there is sufficient proof that you had shown for the agreed period of time, you'll be able to withdraw the amount used to purchase your Zesty NFT.
 
-Please refer to the page below for the step-by-step guide on how to cooolect your funds once you've finished the advertisement.
+Please refer to the video below for the step-by-step guide on how to collect your funds once the advertisement service has been completed
 
-{% content-ref url="collect-funds.md" %}
-[collect-funds.md](collect-funds.md)
-{% endcontent-ref %}
+{% embed url="https://www.youtube.com/watch?v=UKwtTbvmlL4" %}

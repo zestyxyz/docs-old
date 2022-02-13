@@ -6,6 +6,16 @@ description: >-
 
 # Decentraland Integration
 
+## **Before You Integrate**
+
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more **** instructions.
+
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
+## Instructions
+
 **Video Tutorial**
 
 {% embed url="https://www.youtube.com/watch?v=6sn8blLfoiI" %}

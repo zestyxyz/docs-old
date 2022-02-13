@@ -4,6 +4,14 @@ description: These are the steps to integrate Zesty into a WebXR experience.
 
 # WebXR Integration
 
+## Before You Integrate
+
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more instructions.
+
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
 ## A-Frame
 
 #### Step 1a

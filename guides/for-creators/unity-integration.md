@@ -1,5 +1,15 @@
 # Unity Integration
 
+## Before You Integrate
+
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more instructions.
+
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
+## Instructions
+
 **Step 1**
 
 Download the [zesty-unity-sdk package](https://ipfs.io/ipns/lib.zesty.market/zesty-unity-sdk.unitypackage).
