@@ -12,7 +12,6 @@ description: >-
 2. Integrate
 3. Creating an Auction
 4. Getting paid
-   1. Collect Funds
 
 ## 1. Creating a Space
 
