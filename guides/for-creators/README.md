@@ -1,10 +1,10 @@
 ---
 description: >-
   A step-by-step guide to mint your Space as an NFT and start monetization on
-  your content spaces.
+  your spaces.
 ---
 
-# For Creators
+# For Space Owners
 
 ## Summary
 
