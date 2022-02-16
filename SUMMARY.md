@@ -8,7 +8,7 @@
 
 * [MetaMask](guides/metamask.md)
 * [For Advertisers](guides/advertisers.md)
-* [For Space Owners](guides/for-creators/README.md)
+* [For Virtual Space Owners](guides/for-creators/README.md)
   * [WebXR Integration](guides/for-creators/webxr-integration.md)
   * [Unity Integration](guides/for-creators/unity-integration.md)
   * [Cryptovoxels Integration](guides/for-creators/cryptovoxels-integration.md)
