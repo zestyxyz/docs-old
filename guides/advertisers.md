@@ -1,10 +1,10 @@
 ---
-description: How to start renting on Zesty Market
+description: How to start advertising on Zesty Market
 ---
 
-# For Renters
+# For Advertisers
 
-This guide will show you how to start renting on Zesty Market step-by-step. Before proceeding, make sure you have MetaMask installed and set to the correct network ( **Polygon**). You'll also need USDC to start renting Spaces. See our MetaMask guide [here](metamask.md).
+This guide will show you how to start advertising on Zesty Market step-by-step. Before proceeding, make sure you have MetaMask installed and set to the correct network ( **Polygon**). You'll also need USDC to start renting Spaces. See our MetaMask guide [here](metamask.md).
 
 ## Summary
 

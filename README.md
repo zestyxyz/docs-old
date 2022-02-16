@@ -10,10 +10,10 @@ Our first product is an open marketplace for the buying and selling of banner sp
 
 Banner spaces are represented as NFTs - ownership of the NFT gives the renter the right to modify the space to show their own banners.
 
-## Rent Banner Spaces
+## Advertise
 
 Learn how to rent banner spaces to promote your business or brand [here](guides/advertisers.md).
 
-## Land Owners and Builders
+## Space Owners and Builders
 
 Start earning yield on your land in the metaverse by clicking [here](broken-reference).
