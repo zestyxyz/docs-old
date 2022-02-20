@@ -20,10 +20,6 @@
 * [Synopsis](system-overview/synopsis.md)
 * [Incentives](system-overview/incentives.md)
 
-## Data
-
-* [Analytics](data/analytics.md)
-
 ## Smart Contracts
 
 * [Overview](smart-contracts/overview.md)
