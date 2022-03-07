@@ -9,11 +9,15 @@
 * [MetaMask](guides/metamask.md)
 * [For Advertisers](guides/advertisers.md)
 * [For Virtual Space Owners](guides/for-creators/README.md)
-  * [WebXR Integration](guides/for-creators/webxr-integration.md)
-  * [Unity Integration](guides/for-creators/unity-integration.md)
-  * [Cryptovoxels Integration](guides/for-creators/cryptovoxels-integration.md)
-  * [Decentraland Integration](guides/for-creators/decentraland-integration.md)
-  * [Web & Twitch Integration (OBS)](guides/for-creators/web-and-twitch-integration-obs.md)
+  * [Create a Space](guides/for-creators/create-space.md)
+  * [Integrations](guides/for-creators/integrations/README.md)
+    * [WebXR Integration](guides/for-creators/webxr-integration.md)
+    * [Unity Integration](guides/for-creators/unity-integration.md)
+    * [Cryptovoxels Integration](guides/for-creators/cryptovoxels-integration.md)
+    * [Decentraland Integration](guides/for-creators/decentraland-integration.md)
+    * [Web & Twitch Integration (OBS)](guides/for-creators/web-and-twitch-integration-obs.md)
+  * [Create an auction](guides/for-creators/create-auction.md)
+  * [Get Paid](guides/for-creators/get-paid.md)
 
 ## System Overview
 
