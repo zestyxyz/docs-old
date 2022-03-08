@@ -24,7 +24,7 @@ Video tutorial on how to use Zesty Banners in Decentraland's builder
 
 **Step 1**
 
-Download the latest release of the Zesty Banner smart item (it will be the first file listed named "item.zip"), which you can find in the GitHub repository [here](https://github.com/zestymarket/dcl/releases).
+Download the latest release of the Zesty Banner smart item (it will be the first file listed named "item.zip"), which you can find in the GitHub repository [here](https://github.com/zestymarket/dcl/releases/download/v1.1/item.zip).
 
 **Step 2**
 
@@ -50,6 +50,16 @@ Once done you now have the custom Zesty Banner smart item available to use!
 
 **Step 5**
 
-Open your new asset pack and click the Zesty Banner smart item to spawn it into the scene. Click on the banner to adjust the various settings such as network, space ID, format, style, and beacon usage.
+Open your new asset pack and click the Zesty Banner smart item to spawn it into the scene. Click on the banner to adjust the various settings.
+
+**Network**: Polygon Mainnet
+
+**Space**: Your space ID number
+
+**Format**: The ad aspect ratio that your banner will support
+
+**Style**: Standard or minimal placeholders that indicate the banner is available to rent
+
+**Beacon**: Enables analytics on the Zesty app
 
 ![](<../../.gitbook/assets/DCL\_5 (1).png>)
