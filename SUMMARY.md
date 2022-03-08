@@ -19,6 +19,7 @@
     * [babylon.js Integration](guides/for-creators/webxr-integrations/babylonjs.md)
     * [React Three Fiber Integration](guides/for-creators/webxr-integrations/r3f.md)
     * [three.js Integration](guides/for-creators/webxr-integrations/threejs.md)
+    * [Wonderland Engine Integration](guides/for-creators/webxr-integrations/wonderland.md)
   * [Create an auction](guides/for-creators/create-auction.md)
   * [Get Paid](guides/for-creators/get-paid.md)
 

@@ -10,7 +10,7 @@ You will first need to create a Space NFT in order to get started checkout "For 
 [.](./)
 {% endcontent-ref %}
 
-#### Importing the SDK
+### Importing the SDK
 
 **NPM Project** - install it like so:
 
@@ -36,7 +36,7 @@ Zesty can be imported through a single HTML page, no need to install it as a Nod
 <script src="https://ipfs.io/ipns/lib.zesty.market/zesty-babylonjs-sdk.js"></script>
 ```
 
-#### Bringing the Zesty Banner into your scene
+### Bringing the Zesty Banner into your scene
 
 Make sure you have a reference to your scene and WebXRHelper (if applicable), then copy and paste:
 
@@ -55,7 +55,7 @@ const zestyBanner = new ZestyBanner("0", "0x000000000000000000000000000000000000
 ```
 
 
-#### Customizing your banner display
+### Customizing your banner display
 
 These are the available attributes for your banner:
 

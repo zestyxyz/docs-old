@@ -10,7 +10,7 @@ You will first need to create a Space NFT in order to get started checkout "For 
 [.](./)
 {% endcontent-ref %}
 
-#### Importing the SDK
+### Importing the SDK
 
 **NPM Project** - install it like so:
 
@@ -33,7 +33,7 @@ Zesty can be imported through a single HTML page, no need to install it as a Nod
 <script src="https://ipfs.io/ipns/lib.zesty.market/zesty-aframe-sdk.js"></script>
 ```
 
-#### Bringing the Zesty Banner into your scene
+### Bringing the Zesty Banner into your scene
 
 In the `<a-scene>`, copy and paste:
 
@@ -49,7 +49,7 @@ To opt into enabling a beacon for your space, copy and paste:
 <a-entity visible="true" zesty-banner="space: 0; creator: 0x0000000000000000000000000000000000000000; format: tall; style: standard; beacon: true" position="0 2 0"></a-entity>
 ```
 
-#### Customizing your banner display
+### Customizing your banner display
 
 These are the available attributes for your banner:
 

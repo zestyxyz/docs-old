@@ -32,4 +32,4 @@ Right click the "Banner" in your hierarchy, click properties and configure your 
 
 Add the Banner prefab and configure the space ID, creator ID, format, and style based on your space details from the Zesty marketplace.
 
-To opt into enabling a beacon on your space, simply check the "Enable Beacon" box on the Banner component. This will enable you to track analytics.
+To opt into enabling a beacon on your space, simply check the "Enable Beacon" box on the Banner component. This will allow you to track analytics.

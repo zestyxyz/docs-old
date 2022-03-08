@@ -2,9 +2,13 @@
 
 From the [Space](https://app.zesty.market/spaces) page, select the Space you want to create an auction with.
 
-Next, click on **Create Auction** under the Auctions section. The Auction calendar will pop-up. Then, choose your date(s) for the auction slot, set the amount of auction in USDC, and click on **Confirm**.
+Next, click on **Create Auction** under the Auctions section. The Auction calendar will pop-up. Afterwards:
 
-*Note: *
+1. Choose a date or multiple dates for the auction slot.
+2. Set the USDC cost for the created auction slots
+3. Click **Confirm**
+
+*Note: You can set up multiple auction timeslots in a single trasnaciton*
 
 ![](../../.gitbook/assets/Space\_7.png)
 
