@@ -9,6 +9,7 @@ description: >-
 ## Summary
 
 1. [Creating a Space](./create-space.md)
-2. [Integrate](./integrations/README.md)
-3. [Creating an Auction](./create-auction.md)
-4. [Getting paid](./get-paid.md)
+1. [Platform Integrations](./platform-integrations/README.md)
+1. [WebXR Integrations](./webxr-integrations/README.md)
+1. [Creating an Auction](./create-auction.md)
+1. [Getting paid](./get-paid.md)
