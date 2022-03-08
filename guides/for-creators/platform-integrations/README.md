@@ -17,7 +17,3 @@ Please refer to the pages below for the integration set-up guide.
 {% content-ref url="decentraland-integration.md" %}
 [decentraland-integration.md](decentraland-integration.md)
 {% endcontent-ref %}
-
-{% content-ref url="web-and-twitch-integration-obs.md" %}
-[web-and-twitch-integration-obs.md](web-and-twitch-integration-obs.md)
-{% endcontent-ref %}
