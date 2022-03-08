@@ -1,6 +1,6 @@
 # babylon.js
 
-Repository: https://github.com/zestymarket/sdk/tree/main/threejs
+Repository: [https://github.com/zestymarket/sdk/tree/main/threejs](https://github.com/zestymarket/sdk/tree/main/threejs)
 
 #### Importing the SDK
 

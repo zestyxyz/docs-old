@@ -1,6 +1,6 @@
 # Cryptovoxels Integration
 
-Repository: https://github.com/zestymarket/sdk/tree/main/cryptovoxels
+Repository: [https://github.com/zestymarket/sdk/tree/main/cryptovoxels](https://github.com/zestymarket/sdk/tree/main/cryptovoxels)
 
 ## Before You Integrate
 

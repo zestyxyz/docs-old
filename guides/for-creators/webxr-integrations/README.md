@@ -21,7 +21,3 @@ Please refer to the pages below for the integration set-up guide.
 {% content-ref url="threejs.md" %}
 [three.js](threejs.md)
 {% endcontent-ref %}
-
-{% content-ref url="web.md" %}
-[Standard Web](web.md)
-{% endcontent-ref %}

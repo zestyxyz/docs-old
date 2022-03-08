@@ -1,6 +1,6 @@
 # React Three Fiber
 
-Repository: https://github.com/zestymarket/sdk/tree/main/r3f
+Repository: [https://github.com/zestymarket/sdk/tree/main/r3f](https://github.com/zestymarket/sdk/tree/main/r3f)
 
 #### Importing the SDK
 

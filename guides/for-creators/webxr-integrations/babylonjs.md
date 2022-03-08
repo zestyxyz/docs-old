@@ -1,6 +1,6 @@
 # babylon.js
 
-Repository: https://github.com/zestymarket/sdk/tree/main/babylonjs
+Repository: [https://github.com/zestymarket/sdk/tree/main/babylonjs](https://github.com/zestymarket/sdk/tree/main/babylonjs)
 
 #### Importing the SDK
 

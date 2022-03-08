@@ -1,6 +1,6 @@
 # Unity Integration
 
-Repository: https://github.com/zestymarket/sdk/tree/main/unity
+Repository: [https://github.com/zestymarket/sdk/tree/main/unity](https://github.com/zestymarket/sdk/tree/main/unity)
 
 ## Before You Integrate
 
