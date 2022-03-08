@@ -7,7 +7,7 @@ Repository: https://github.com/zestymarket/sdk/tree/main/threejs
 **NPM Project** - install it like so:
 
 ```
-npm install @zestymarket/threejs-sdk'
+npm install `@zestymarket/threejs-sdk'
 ```
 
 Once installed, import the ZestyBanner component:
