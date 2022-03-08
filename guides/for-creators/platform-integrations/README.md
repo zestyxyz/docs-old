@@ -1,8 +1,14 @@
-Please refer to the pages below for the integration set-up guide.
+# WebXR Integration
 
-{% content-ref url="webxr-integration.md" %}
-[webxr-integration.md](webxr-integration.md)
+## Before You Integrate
+
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more instructions.
+
+{% content-ref url="../README.md" %}
+[.](./)
 {% endcontent-ref %}
+
+Please refer to the pages below for the integration set-up guide.
 
 {% content-ref url="unity-integration.md" %}
 [unity-integration.md](unity-integration.md)
