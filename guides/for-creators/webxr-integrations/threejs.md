@@ -2,6 +2,14 @@
 
 Repository: [https://github.com/zestymarket/sdk/tree/main/threejs](https://github.com/zestymarket/sdk/tree/main/threejs)
 
+## Before You Integrate
+
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more instructions.
+
+{% content-ref url="../create-space.md" %}
+[.](./)
+{% endcontent-ref %}
+
 #### Importing the SDK
 
 **NPM Project** - install it like so:

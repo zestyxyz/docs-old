@@ -2,6 +2,14 @@
 
 repository: [https://github.com/zestymarket/sdk/tree/main/wonderland](https://github.com/zestymarket/sdk/tree/main/wonderland)
 
+## Before You Integrate
+
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more instructions.
+
+{% content-ref url="../create-space.md" %}
+[.](./)
+{% endcontent-ref %}
+
 #### Step 1a
 
 To just use the bundled file, download it by right-clicking this link and saving it into your project folder: [https://ipfs.io/ipns/lib.zesty.market/zesty-wonderland-sdk.js](https://ipfs.io/ipns/lib.zesty.market/zesty-wonderland-sdk.js)
