@@ -73,14 +73,14 @@ String: Specify format of your ad space `tall`, `wide`, or `square`
 - Square - 1:1
 
 **style**
-*optional*
+*optional - defaults to `standard`*
 
 String: Style of your placeholder image, which notifies viewers that the ad space is available
 
 **height**
-*optional*
+*optional - defaults to `1`*
 
-Integer: Scale the banner to your liking. Default value is `1`
+Integer: Scale the banner to your liking.
 
 **beacon**
 *optional*
