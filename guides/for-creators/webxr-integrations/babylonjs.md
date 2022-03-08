@@ -13,7 +13,7 @@ npm install '@zestymarket/babylonjs-sdk'
 Once installed, import the ZestyBanner component:
 
 ```
-import * as Zesty from '@zestymarket/aframe-sdk';
+import * as Zesty from '@zestymarket/babylonjs-sdk';
 ```
 
 
@@ -32,6 +32,8 @@ Make sure you have a reference to your scene and WebXRHelper (if applicable), th
 ```
 const zestyBanner = new ZestyBanner("0", "0x0000000000000000000000000000000000000000", "tall", "standard", 3, scene, xrHelper);
 ```
+
+Replace `0` with your Space ID and  `0x0000000000000000000000000000000000000000` with your wallet address
 
 Substitute variable names as needed. The last parameter for the WebXRHelper is optional.
 
