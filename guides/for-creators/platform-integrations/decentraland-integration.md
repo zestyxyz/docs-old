@@ -8,9 +8,9 @@ description: >-
 
 ## **Before You Integrate**
 
-You will first need to create a Space NFT in order to get started checkout "For Creators" for more **** instructions.
+You will first need to create a Space NFT in order to get started checkout "For Creators" for more instructions.
 
-{% content-ref url="./" %}
+{% content-ref url="../create-space.md" %}
 [.](./)
 {% endcontent-ref %}
 
