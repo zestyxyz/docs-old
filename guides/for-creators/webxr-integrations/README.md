@@ -6,10 +6,6 @@ You will first need to create a Space NFT in order to get started checkout "For 
 
 Please refer to the pages below for the integration set-up guide.
 
-{% content-ref url="../README.md" %}
-[.](./)
-{% endcontent-ref %}
-
 {% content-ref url="a-frame.md" %}
 [A-Frame](a-frame.md)
 {% endcontent-ref %}
