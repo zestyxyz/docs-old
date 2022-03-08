@@ -1,4 +1,4 @@
-## A-Frame
+# A-Frame
 
 Repository: https://github.com/zestymarket/sdk/tree/main/aframe
 
@@ -98,7 +98,7 @@ Specify format of your ad space `tall`, `wide`, or `square`
 **style**
 *optional*
 
-Choose the style of your placeholder image, which notifies viewers that the ad space is available
+Style of your placeholder image, which notifies viewers that the ad space is available
 
 `style: { type: 'string', default: defaultStyle, oneOf: ['standard', 'minimal'] }`
 
