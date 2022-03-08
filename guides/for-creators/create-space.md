@@ -45,21 +45,17 @@ Once the details are filled, click on **Create**. A MetaMask pop-up will ask you
 
 When the transaction is completed, you'll receive a notification from MetaMask. You may check on your Space by going to the Space page. If the Space is listed, you're done creating your Space NFT!
 
-![](../../.gitbook/assets/Space\_4.png)
+## **Deposit**
 
-On the Space NFT page, there are a few things you can do:
+**Depositing your Space NFT to Zesty's smart contract is required in order to create an auction.**
 
-* **Deposit NFT**
-  * Depositing your NFT token into the smart contract
-  * This also makes your space available for others to see in Market page
-* **Edit**
-  * You can edit the details to your Space NFT here
-* **Collect Funds**
-  * This is where you can collect the payouts to your successful auctions
-* **Auctions Section**
-  * List of auctions slots you created
-  * You may create auctions here
-* **History**
-  * Historical prices and listings of your auctions
-* **Integration**
-  * You'll find the settings to set-up your Space NFT on your content platform here
+In the Space page, you'll find **Deposit NFT** button, click on it.
+
+A deposit NFT pop-up will appear. There are 2 actions you are required to do here, **Approve** and **Deposit**. You'll need to do each of the action one-by-one. Both of the buttons will result in MetaMask pop-ups requiring you to confirm your actions.
+
+![](../../.gitbook/assets/Space\_5.png)
+
+**Below are the Confirmations you'll need to do when Approving and Depositing your NFT.** On both occasions, you'll get a notification when the transaction is completed.
+
+
+![Left: Approving Zesty to spend your USDC. Right: Confirming to deposit your NFT](../../.gitbook/assets/Space\_6.png)
