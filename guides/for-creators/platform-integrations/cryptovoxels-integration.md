@@ -12,11 +12,11 @@ You will first need to create a Space NFT in order to get started checkout "For 
 
 ## Instructions
 
-**Create an image**
+#### Create an image
 
 Create an image in your Cryptovoxels parcel.
 
-**Configure Image**
+#### Configure Image
 
 **Step 1**
 
