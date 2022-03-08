@@ -16,6 +16,9 @@ Once installed, import the ZestyBanner component:
 import * as Zesty from '@zestymarket/babylonjs-sdk';
 ```
 
+**Warning**: Make sure you are using the same three.js version as the Zesty package. You can check here: https://github.com/zestymarket/sdk/blob/main/babylonjs/package.json
+
+If you are using an unsupported version, you can import a specific version of three.js from services like CDN: [https://cdn.skypack.dev/babylonjs@version](https://cdn.skypack.dev/babylonjs@4.2.1)
 
 **HTML Tag** - Paste this into the `<head>`:
 
