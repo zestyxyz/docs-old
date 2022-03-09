@@ -10,7 +10,7 @@ Likewise with Compound protocol, Zesty Market will be governed and upgraded by Z
 
 ZestyTokens has a fixed supply of 100,000,000 ZESTY. Any address with more than 1,000,000 ZESTY (1% of ZESTY) delegated to it may propose governance actions, which are executable code. When a proposal is created, the community can submit their votes during a 3 day voting period. If a majority, and at least 7,000,000 (7% of  ZESTY) votes are cast for the proposal, it is queued in the Timelock, and can be implemented after a minimum of 2 days.
 
-![Flow of Compound's Governor Alpha](<../../.gitbook/assets/image (2) (2).png>)
+![Flow of Compound's Governor Alpha](<../../.gitbook/assets/image (2) (1).png>)
 
 ### ZestyToken
 
@@ -335,7 +335,7 @@ const tx = gov.methods.queue(proposalId).send({ from: sender });
 
 After the Timelock delay period, any account may invoke the execute method to apply the changes from the proposal to the target contracts. This will invoke each of the actions described in the proposal.
 
-This function is payable so the Timelock contract can invoke payable functions that were selected in the proposal. 
+This function is payable so the Timelock contract can invoke payable functions that were selected in the proposal.&#x20;
 
 **Governor Alpha**
 

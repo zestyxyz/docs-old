@@ -14,6 +14,7 @@
     * [Unity Integration](guides/for-creators/platform-integrations/unity-integration.md)
     * [Cryptovoxels Integration](guides/for-creators/platform-integrations/cryptovoxels-integration.md)
     * [Decentraland Integration](guides/for-creators/platform-integrations/decentraland-integration.md)
+    * [Muse Integration](guides/for-creators/platform-integrations/muse-integration.md)
   * [WebXR Integrations](guides/for-creators/webxr-integrations/README.md)
     * [A-Frame Integration](guides/for-creators/webxr-integrations/a-frame.md)
     * [babylon.js Integration](guides/for-creators/webxr-integrations/babylonjs.md)

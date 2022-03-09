@@ -129,17 +129,17 @@ Please while transactions get confirmed. The project will look into fast and rel
 
 When you have your ETH in Polygon network, you may now go to [https://app.sushi.com/swap](https://app.sushi.com/swap) to swap ETH for USDC. Make sure you are in Polygon network (go to your MetaMask wallet, click on the network dropdown on top of the wallet, click and choose Polygon network that you have set up earlier)
 
-![](<../.gitbook/assets/sushi1 (1).png>)
+![](../.gitbook/assets/sushi1.png)
 
 Next, you'll want to choose Swap from as **WETH** and swap to as **USDC**.
 
-![](../.gitbook/assets/sushi2.png)
+![](<../.gitbook/assets/sushi2 (1).png>)
 
 Once you've chosen the right tokens (WETH and USDC), choose the amount of ETH you want to swap or the amount of UDSC you want to swap to. Whichever you choose, the platform will auto-calculate how much you'll swap for.
 
 Click on **Confirm Swap**.
 
-![](<../.gitbook/assets/sushi3 (1).png>)
+![](../.gitbook/assets/sushi3.png)
 
 MetaMask pop-up window will appear, to confirm your transaction, click on **Confirm**.
 
@@ -151,6 +151,6 @@ This will confirm your transaction and it might take a while for your transactio
 
 Once the transaction is done, you'll see a small pop-up on your screen. You can also check your USDC balance on your MetaMask wallet.&#x20;
 
-![Right: Confirming transaction. Left: Transaction completed. Checking your balance.](../.gitbook/assets/sushi4.png)
+![Right: Confirming transaction. Left: Transaction completed. Checking your balance.](<../.gitbook/assets/sushi4 (1).png>)
 
 Awesome. You've done with the pre-requisites!

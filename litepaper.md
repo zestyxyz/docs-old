@@ -137,7 +137,7 @@ When enough secret shares are known the publisher would be able to reconstruct t
 
 **Protocol Design**
 
-![Sequence Diagram of the Zesty Market Protocol](.gitbook/assets/AuctionHTLC.png)
+![Sequence Diagram of the Zesty Market Protocol](.gitbook/assets/auctionhtlc.png)
 
 ### Beacons
 
