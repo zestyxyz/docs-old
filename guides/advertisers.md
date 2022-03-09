@@ -4,13 +4,17 @@ description: How to start advertising on Zesty Market
 
 # For Advertisers
 
-This guide will show you how to start advertising on Zesty Market step-by-step. Before proceeding, make sure you have MetaMask installed and set to the correct network ( **Polygon**). You'll also need USDC to start renting Spaces. See our MetaMask guide [here](metamask.md).
+This guide will show you how to start advertising on Zesty Market step-by-step. Before proceeding, make sure you have MetaMask installed and set to the correct network (**Polygon**). You'll also need USDC to start renting Spaces. See our MetaMask guide [here](metamask.md).
 
 ## Summary
 
 1. Create a Campaign
 2. Bid on Timeslots
 3. Refunds
+
+## Example Campaign
+
+[https://app.zesty.market/campaigns/146?chainId=137](https://app.zesty.market/campaigns/146?chainId=137)
 
 ## 1. Create a campaign
 
