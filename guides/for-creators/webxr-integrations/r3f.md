@@ -21,7 +21,7 @@ npm install `@zestymarket/r3f-sdk'
 Once installed, import the ZestyBanner component:
 
 ```
-import * as Zesty from '@zestymarket/threejs-sdk';
+import * as Zesty from '@zestymarket/r3f-sdk';
 ```
 
 
@@ -43,7 +43,9 @@ In your VR Canvas component, copy and paste:
 
 replace `space= ` with your Space ID and `creator= ` with your wallet address.
 
-To opt into enabling a beacon on your space, copy and paste:
+You can also pass the argument `beacon={true}` if you would like to opt into Zesty Analytics. Anyone will be able to view this on your Space's page, where it will display a history of visits to your space and clicks on your banner.
+
+Adding a banner to the previous example would look like this:
 
 ```
 <ZestyBanner space={'0'} creator={'0x0000000000000000000000000000000000000000'} format={'tall'} style={'standard'} beacon={true} position={[0, 2, 0]} />
@@ -103,5 +105,6 @@ Boolean: Setting beacon to `true` allows you to view analytics on your space pag
    creator={'YOUR_CREATOR_ID'}
    format={'YOUR_SPACE_FORMAT'}
    style={'YOUR_DESIRED_BANNER_STYLE'}
+   beacon={true}
    position={[X, Y, Z]} />
 ```

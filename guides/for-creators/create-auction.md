@@ -8,7 +8,7 @@ Next, click on **Create Auction** under the Auctions section. The Auction calend
 2. Set the USDC cost for the created auction slots
 3. Click **Confirm**
 
-*Note: You can set up multiple auction timeslots in a single trasnaciton*
+*Note: You can set up multiple auction timeslots in a single transaction*
 
 ![](../../.gitbook/assets/Space\_7.png)
 

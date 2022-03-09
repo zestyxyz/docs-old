@@ -60,6 +60,6 @@ Open your new asset pack and click the Zesty Banner smart item to spawn it into 
 
 **Style**: Standard or minimal placeholders that indicate the banner is available to rent
 
-**Beacon**: Enables analytics on the Zesty app
+**Beacon**: To opt into enabling a beacon on your space. This will allow you to see analytics like space visits and banner clicks within the Zesty app.
 
 ![](<../../../.gitbook/assets/DCL\_5 (1).png>)

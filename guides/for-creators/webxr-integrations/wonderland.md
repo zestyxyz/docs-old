@@ -57,7 +57,7 @@ Add the zesty-banner component to your mesh's object and fill in the following f
 ![](https://i.imgur.com/BXMonQ9.png)
 ![](https://i.imgur.com/20BQWXh.png)
 
-To opt into enabling a beacon on your space, simply check the "beacon" box on the zesty-banner component.
+To opt into enabling a beacon on your space, simply check the "beacon" box on the zesty-banner component. This will allow you to see analytics like space visits and banner clicks within the Zesty app.
 
 #### Run the test server
 

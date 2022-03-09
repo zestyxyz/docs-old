@@ -55,7 +55,9 @@ loadBanner('0', '0x0000000000000000000000000000000000000000', 'polygon', 'tall',
 
 Replace `0` and  `0x0000000000000000000000000000000000000000` with your space number and wallet address
 
-To opt into enabling a beacon on your space, copy and paste:
+You can also pass the argument `true` if you would like to opt into Zesty Analytics. Anyone will be able to view this on your Space's page, where it will display a history of visits to your space and clicks on your banner.
+
+Adding a banner to the previous example would look like this:
 
 ```
 loadBanner('0', '0x0000000000000000000000000000000000000000', 'polygon', 'tall', 'standard', true)

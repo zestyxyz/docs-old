@@ -48,7 +48,9 @@ Replace `0` with your Space ID and  `0x0000000000000000000000000000000000000000`
 
 Substitute variable names as needed. The last parameter for the WebXRHelper is optional.
 
-To opt into enabling a beacon on your space, copy and paste:
+You can also pass the argument `true` if you would like to opt into Zesty Analytics. Anyone will be able to view this on your Space's page, where it will display a history of visits to your space and clicks on your banner.
+
+Adding a banner to the previous example would look like this:
 
 ```
 const zestyBanner = new ZestyBanner("0", "0x0000000000000000000000000000000000000000", "tall", "standard", 3, scene, xrHelper, true);
