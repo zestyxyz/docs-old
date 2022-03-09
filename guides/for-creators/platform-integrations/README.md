@@ -18,6 +18,6 @@ Please refer to the pages below for the integration set-up guide.
 [decentraland-integration.md](decentraland-integration.md)
 {% endcontent-ref %}
 
-{% content-ref url="muse-integration.md" %}
-[muse-integration.md](muse-integration.md)
+{% content-ref url="muse.md" %}
+[muse.md](muse.md)
 {% endcontent-ref %}
