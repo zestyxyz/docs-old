@@ -25,7 +25,7 @@ Press Tab to open the build menu, then click "Add". This shows you the different
 Click "Specify" and then paste in this identifier that corresponds to the Zesty Banner:
 
 ```
-c1d1fb2d-bcb1-46a9-97c9-f0ba1bd3d81f
+d351e206-edb0-4278-adc6-5b79d6a91464
 ```
 
 ![](../../../.gitbook/assets/muse2.png)
@@ -44,7 +44,7 @@ Select the banner, then fill out the following fields to line up with your space
 * Space: Your space ID on the marketplace. Should be a number.
 * Format: The shape of your banner. Should be `tall`, `wide`, or `square`.
 * Style: The style of your default banner when no campaign is currently running on it. Should be `standard`, `minimal`, or `transparent`.
-* Beacon: Whether beacon analytics are turned on or off.
+* Disable Beacon: Whether to opt out of sending analytics to Zesty's beacon service.
 
 ![](../../../.gitbook/assets/muse5.png)
 
